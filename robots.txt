@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nestinhyderabad.in/sitemap.xml
-
+Sitemap: https://nestinhyderabad.com/sitemap.xml
