@@ -479,7 +479,9 @@ ul { list-style: none; }
   border-radius: 50px;
   font-size: 0.72rem;
   font-weight: 700;
-  z-index: 1;
+  z-index: 3;
+  text-shadow: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .project-img {
@@ -488,17 +490,26 @@ ul { list-style: none; }
   display: flex;
   align-items: flex-end;
   padding: 20px;
+  overflow: hidden;
+}
+.project-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+  z-index: 1;
 }
 
-.project-img-content { }
+.project-img-content { position: relative; z-index: 2; }
 .pi-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--gold);
   line-height: 1.15;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
-.pi-location { color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 4px; }
+.pi-location { color: rgba(255,255,255,0.8); font-size: 0.8rem; margin-top: 4px; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
 
 .project-body { padding: 24px; }
 
@@ -726,6 +737,14 @@ ul { list-style: none; }
   display: flex;
   align-items: flex-end;
   padding: 16px;
+  overflow: hidden;
+}
+.blog-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, rgba(0,0,0,0.1) 100%);
+  z-index: 1;
 }
 .blog-category {
   display: inline-block;
@@ -735,6 +754,8 @@ ul { list-style: none; }
   border-radius: 50px;
   font-size: 0.72rem;
   font-weight: 700;
+  position: relative;
+  z-index: 2;
 }
 
 .blog-body { padding: 20px; }
@@ -750,6 +771,41 @@ ul { list-style: none; }
 .blog-body h3 a:hover { color: var(--gold-dark); }
 .blog-body p { font-size: 0.85rem; color: var(--gray); line-height: 1.6; margin-bottom: 14px; }
 .blog-read-more { color: var(--gold-dark); font-size: 0.82rem; font-weight: 600; }
+
+/* ── SOCIAL SHARE ── */
+.social-share-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 24px 0;
+  margin: 40px 0 0;
+  border-top: 1.5px solid #f0ece4;
+}
+.social-share-bar .share-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.share-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+.share-btn.whatsapp { background: #25D366; color: #fff; }
+.share-btn.twitter { background: #000; color: #fff; }
+.share-btn.facebook { background: #1877F2; color: #fff; }
+.share-btn.linkedin { background: #0A66C2; color: #fff; }
+.share-btn.copy-link { background: #f0ece4; color: #333; border: 1px solid #ddd; }
+.share-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 /* ── TESTIMONIALS ── */
 .testimonials-grid {
