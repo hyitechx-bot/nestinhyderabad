@@ -132,7 +132,7 @@
   });
 
   // ── Intersection Observer for fade-in animations ──
-  var fadeEls = document.querySelectorAll('.project-card, .why-card, .blog-card, .testimonial-card, .location-card');
+  var fadeEls = document.querySelectorAll('.why-card, .blog-card, .testimonial-card, .location-card');
 
   if ('IntersectionObserver' in window) {
     var observer = new IntersectionObserver(function (entries) {
@@ -152,5 +152,31 @@
       observer.observe(el);
     });
   }
+
+  // ── Projects Slider (Horizontal Carousel) ──
+  var projectsSlider = document.getElementById('projectsSlider');
+  var prevBtn = document.getElementById('projectsPrev');
+  var nextBtn = document.getElementById('projectsNext');
+
+  if (projectsSlider && prevBtn && nextBtn) {
+    var scrollAmount = 400;
+
+    nextBtn.addEventListener('click', function () {
+      projectsSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', function () {
+      projectsSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+  }
+
+  // ── Clickable Project Cards ──
+  document.querySelectorAll('.project-card[data-href]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      // Don't navigate if clicking on a link or button inside the card
+      if (e.target.closest('a') || e.target.closest('button')) return;
+      window.location.href = card.getAttribute('data-href');
+    });
+  });
 
 })();

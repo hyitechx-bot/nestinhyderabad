@@ -54,7 +54,7 @@
 <!-- ═══════ NAVIGATION ═══════ -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
-    <a href="index.html" class="nav-logo">
+    <a href="/" class="nav-logo">
       <div class="logo-icon">
         <svg viewBox="0 0 32 32" fill="none"><path d="M16 3L4 14h3v13h6v-7h6v7h6V14h3L16 3z" fill="#0a0a0a"/></svg>
       </div>
@@ -64,26 +64,32 @@
       </div>
     </a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="/" class="active">Home</a></li>
       <li class="has-dropdown">
         <a href="#">Projects ▾</a>
         <ul class="dropdown">
-          <li><a href="candeur-eternia-bachupally.html">Candeur Eternia</a></li>
-          <li><a href="candeur-kukatpally/index.html">Candeur Kukatpally - IDL Lake</a></li>
-          <li><a href="jains-central-park-east.html">Jain's Central Park East</a></li>
+          <li><a href="/candeur-eternia-bachupally">Candeur Eternia</a></li>
+          <li><a href="/candeur-kukatpally/">Candeur Kukatpally - IDL Lake</a></li>
+          <li><a href="/candeur-skyline/">Candeur Skyline</a></li>
+          <li><a href="/candeur-lakescape/">Candeur Lakescape</a></li>
+          <li><a href="/candeur-crescent/">Candeur Crescent</a></li>
+          <li><a href="/candeur-twins/">Candeur Twins</a></li>
+          <li><a href="/candeur-c40/">Candeur C40</a></li>
+          <li><a href="/candeur-novo-gardenia/">Candeur Novo Gardenia</a></li>
+          <li><a href="/jains-central-park-east">Jain's Central Park East</a></li>
         </ul>
       </li>
       <li class="has-dropdown">
         <a href="#">Locations ▾</a>
         <ul class="dropdown">
-          <li><a href="apartments-in-bachupally.html">Bachupally</a></li>
-          <li><a href="apartments-near-orr-hyderabad.html">Near ORR</a></li>
-          <li><a href="gated-community-apartments-hyderabad.html">Gated Communities</a></li>
-          <li><a href="3-bhk-apartments-bachupally.html">3 BHK Bachupally</a></li>
-          <li><a href="best-apartments-under-1-crore-hyderabad.html">Under 1 Crore</a></li>
+          <li><a href="/apartments-in-bachupally">Bachupally</a></li>
+          <li><a href="/apartments-near-orr-hyderabad">Near ORR</a></li>
+          <li><a href="/gated-community-apartments-hyderabad">Gated Communities</a></li>
+          <li><a href="/3-bhk-apartments-bachupally">3 BHK Bachupally</a></li>
+          <li><a href="/best-apartments-under-1-crore-hyderabad">Under 1 Crore</a></li>
         </ul>
       </li>
-      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="https://wa.me/919391954743?text=Hi%2C%20I%20want%20to%20know%20more%20about%20apartments%20in%20Hyderabad" class="btn btn-whatsapp nav-cta" target="_blank" rel="noopener">
@@ -145,12 +151,15 @@
       <h2 class="section-title">Handpicked Projects for Discerning Buyers</h2>
       <p class="section-sub">RERA verified, carefully vetted gated communities across Hyderabad's fastest-growing locations.</p>
     </div>
-    <div class="projects-grid">
+    <div class="projects-slider-wrapper">
+      <button class="slider-arrow prev" id="projectsPrev" aria-label="Previous">&#10094;</button>
+      <button class="slider-arrow next" id="projectsNext" aria-label="Next">&#10095;</button>
+    <div class="projects-grid" id="projectsSlider">
 
       <!-- Candeur Eternia -->
-      <div class="project-card featured">
-        <div class="project-badge">⭐ Featured</div>
-        <div class="project-img" style="background:url('assets/Candure-eternia-project.jpeg') center/cover no-repeat">
+      <div class="project-card featured" data-href="/candeur-eternia-bachupally" style="cursor:pointer">
+        <div class="project-badge">Featured</div>
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
           <div class="project-img-content">
             <div class="pi-title">Candeur<br/>Eternia</div>
             <div class="pi-location">📍 Bachupally</div>
@@ -175,16 +184,16 @@
             <span>🛏️ 12 Guest Rooms</span>
           </div>
           <div class="project-ctas">
-            <a href="candeur-eternia-bachupally.html" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="/candeur-eternia-bachupally" class="btn btn-gold btn-sm">View Project →</a>
             <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Eternia%20Bachupally.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </div>
 
       <!-- Candeur Kukatpally - IDL Lake -->
-      <div class="project-card featured">
-        <div class="project-badge">🚀 New Pre-Launch</div>
-        <div class="project-img" style="background:url('assets/Candure-kukatpally.jpeg') center/cover no-repeat">
+      <div class="project-card featured" data-href="/candeur-kukatpally/" style="cursor:pointer">
+        <div class="project-badge">New Pre-Launch</div>
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
           <div class="project-img-content">
             <div class="pi-title">Candeur<br/>Kukatpally</div>
             <div class="pi-location">📍 IDL Lake, Kukatpally</div>
@@ -208,15 +217,15 @@
             <span>🌳 Lake Views</span>
           </div>
           <div class="project-ctas">
-            <a href="candeur-kukatpally/index.html" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="/candeur-kukatpally/" class="btn btn-gold btn-sm">View Project →</a>
             <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Kukatpally%20IDL%20Lake%20pre-launch.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </div>
 
       <!-- Jain's Central Park East -->
-      <div class="project-card">
-        <div class="project-img" style="background:url('assets/Jains-central-park-east-project.jpeg') center/cover no-repeat">
+      <div class="project-card" data-href="/jains-central-park-east" style="cursor:pointer">
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
           <div class="project-img-content">
             <div class="pi-title">Jain's Central<br/>Park East</div>
             <div class="pi-location">📍 Uppal,Narapally</div>
@@ -238,12 +247,204 @@
             <span>🏊 Swimming Pool</span>
           </div>
           <div class="project-ctas">
-            <a href="jains-central-park-east.html" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="/jains-central-park-east" class="btn btn-gold btn-sm">View Project →</a>
             <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Jains%20Central%20Park%20East.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
       </div>
 
+      <!-- Candeur Skyline -->
+      <div class="project-card" data-href="/candeur-skyline/" style="cursor:pointer">
+        <div class="project-badge">Ultra Luxury</div>
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur<br/>Skyline</div>
+            <div class="pi-location">📍 Financial District</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur Skyline</h3>
+          <p class="project-location">📍 Financial District, Hyderabad</p>
+          <div class="project-tags">
+            <span class="ptag">4 BHK Sky Villas</span>
+            <span class="ptag">58-59 Floors</span>
+            <span class="ptag rera">RERA ✓</span>
+          </div>
+          <div class="project-price">Starting <strong>₹9 Cr*</strong></div>
+          <p class="project-desc">Ultra luxury 4 BHK Sky Villas. 1 apartment per floor. 4 towers, 58-59 floors. 60,000 sq.ft clubhouse. 13 ft ceilings. Possession Mar 2028.</p>
+          <div class="project-highlights">
+            <span>🏊 Infinity Pool</span>
+            <span>🍷 Lounge</span>
+            <span>🎬 Theatre</span>
+            <span>🌳 Sky Gardens</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-skyline/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Skyline%20Sky%20Villas.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Candeur Lakescape -->
+      <div class="project-card" data-href="/candeur-lakescape/" style="cursor:pointer">
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur<br/>Lakescape</div>
+            <div class="pi-location">📍 Kondapur</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur Lakescape</h3>
+          <p class="project-location">📍 Kondapur, Hyderabad</p>
+          <div class="project-tags">
+            <span class="ptag">2 BHK</span>
+            <span class="ptag">3 BHK</span>
+            <span class="ptag">9.11 Acres</span>
+            <span class="ptag">Lake View</span>
+          </div>
+          <div class="project-price">Starting <strong>₹90L*</strong></div>
+          <p class="project-desc">Lake-view apartments on 9.11 acres. 7 towers, 47 floors. 1,00,000 sq.ft clubhouse. 2–3.5 BHK options. Possession Dec 2026.</p>
+          <div class="project-highlights">
+            <span>🌊 Lake Views</span>
+            <span>🏊 Pool</span>
+            <span>🎬 Theatre</span>
+            <span>🧘 Spa</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-lakescape/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Lakescape%20Kondapur.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Candeur Crescent -->
+      <div class="project-card" data-href="/candeur-crescent/" style="cursor:pointer">
+        <div class="project-badge">Handover Started</div>
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur<br/>Crescent</div>
+            <div class="pi-location">📍 Near Gachibowli</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur Crescent</h3>
+          <p class="project-location">📍 Serilingampally, Near Gachibowli</p>
+          <div class="project-tags">
+            <span class="ptag">2.5 BHK</span>
+            <span class="ptag">3 BHK</span>
+            <span class="ptag">~50 Floors</span>
+          </div>
+          <div class="project-price">Starting <strong>₹1 Cr*</strong></div>
+          <p class="project-desc">High-rise gated community near Gachibowli. ~50 floors. 2.5 & 3 BHK, 1,333–2,656 sq.ft. Handover started – ready to move units available.</p>
+          <div class="project-highlights">
+            <span>🏊 Pool</span>
+            <span>🏋️ Gym</span>
+            <span>🎾 Sports</span>
+            <span>🌳 Gardens</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-crescent/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Crescent%20Gachibowli.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Candeur Twins -->
+      <div class="project-card" data-href="/candeur-twins/" style="cursor:pointer">
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur<br/>Twins</div>
+            <div class="pi-location">📍 Miyapur</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur Twins</h3>
+          <p class="project-location">📍 Miyapur, Hyderabad</p>
+          <div class="project-tags">
+            <span class="ptag">3 BHK</span>
+            <span class="ptag">Twin Towers</span>
+            <span class="ptag">47 Floors</span>
+          </div>
+          <div class="project-price">Starting <strong>₹1.2 Cr*</strong></div>
+          <p class="project-desc">Iconic twin towers in Miyapur. 47 floors, 3 BHK only (1,591–2,060 sq.ft). Possession Jun 2026.</p>
+          <div class="project-highlights">
+            <span>🏊 Pool</span>
+            <span>🏋️ Gym</span>
+            <span>🎬 Theatre</span>
+            <span>🎾 Sports</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-twins/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Twins%20Miyapur.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Candeur C40 -->
+      <div class="project-card" data-href="/candeur-c40/" style="cursor:pointer">
+        <div class="project-badge">Ready to Move</div>
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur<br/>C40</div>
+            <div class="pi-location">📍 Miyapur</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur C40</h3>
+          <p class="project-location">📍 Miyapur, Hyderabad</p>
+          <div class="project-tags">
+            <span class="ptag">2 BHK</span>
+            <span class="ptag">2.5 BHK</span>
+            <span class="ptag">3 BHK</span>
+            <span class="ptag">Completed</span>
+          </div>
+          <div class="project-price">Starting <strong>₹70L*</strong></div>
+          <p class="project-desc">Completed ready-to-move gated community. Compact 2, 2.5 & 3 BHK (1,149–1,610 sq.ft). No construction wait. Move in now.</p>
+          <div class="project-highlights">
+            <span>🏊 Pool</span>
+            <span>🏋️ Gym</span>
+            <span>🔒 Security</span>
+            <span>🌳 Gardens</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-c40/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20C40%20Miyapur.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Candeur Novo Gardenia -->
+      <div class="project-card" data-href="/candeur-novo-gardenia/" style="cursor:pointer">
+        <div class="project-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
+          <div class="project-img-content">
+            <div class="pi-title">Candeur Novo<br/>Gardenia</div>
+            <div class="pi-location">📍 Bengaluru</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-name">Candeur Novo Gardenia</h3>
+          <p class="project-location">📍 Varthur / Gunjur, Bengaluru</p>
+          <div class="project-tags">
+            <span class="ptag">2 BHK</span>
+            <span class="ptag">3 BHK</span>
+            <span class="ptag">Green Living</span>
+          </div>
+          <div class="project-price">Starting <strong>₹80L*</strong></div>
+          <p class="project-desc">Premium green gated community in East Bengaluru. Focus on greenery & open spaces. Near Whitefield & Sarjapur Road IT hubs.</p>
+          <div class="project-highlights">
+            <span>🌳 Gardens</span>
+            <span>🏊 Pool</span>
+            <span>🧘 Yoga</span>
+            <span>🚶 Trails</span>
+          </div>
+          <div class="project-ctas">
+            <a href="/candeur-novo-gardenia/" class="btn btn-gold btn-sm">View Project →</a>
+            <a href="https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Candeur%20Novo%20Gardenia%20Bengaluru.%20Please%20share%20details." class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
     </div>
   </div>
 </section>
@@ -299,31 +500,31 @@
       <p class="section-sub">Detailed guides for every major location in Hyderabad's real estate market.</p>
     </div>
     <div class="locations-grid">
-      <a href="apartments-in-bachupally.html" class="location-card">
+      <a href="/apartments-in-bachupally" class="location-card">
         <div class="lc-icon">📍</div>
         <h3>Bachupally</h3>
         <p>Hyderabad's fastest growing suburb. ORR access, top schools, and hospitals. Best value for money.</p>
         <span class="lc-link">Explore →</span>
       </a>
-      <a href="apartments-near-orr-hyderabad.html" class="location-card">
+      <a href="/apartments-near-orr-hyderabad" class="location-card">
         <div class="lc-icon">🛣️</div>
         <h3>Near ORR</h3>
         <p>Outer Ring Road connectivity gives access to Hitech City, Gachibowli, and the airport in minutes.</p>
         <span class="lc-link">Explore →</span>
       </a>
-      <a href="gated-community-apartments-hyderabad.html" class="location-card">
+      <a href="/gated-community-apartments-hyderabad" class="location-card">
         <div class="lc-icon">🏘️</div>
         <h3>Gated Communities</h3>
         <p>Complete guide to gated community living in Hyderabad — amenities, security, and lifestyle benefits.</p>
         <span class="lc-link">Explore →</span>
       </a>
-      <a href="3-bhk-apartments-bachupally.html" class="location-card">
+      <a href="/3-bhk-apartments-bachupally" class="location-card">
         <div class="lc-icon">🏠</div>
         <h3>3 BHK Bachupally</h3>
         <p>Spacious 3 BHK options in Bachupally. Compare layouts, prices, and projects side by side.</p>
         <span class="lc-link">Explore →</span>
       </a>
-      <a href="best-apartments-under-1-crore-hyderabad.html" class="location-card">
+      <a href="/best-apartments-under-1-crore-hyderabad" class="location-card">
         <div class="lc-icon">💰</div>
         <h3>Under ₹1 Crore</h3>
         <p>Quality 2 BHK apartments under ₹1 crore in Hyderabad. RERA verified, gated communities only.</p>
@@ -363,6 +564,12 @@
             <option value="">Select a project...</option>
             <option value="candeur-eternia">Candeur Eternia – Bachupally</option>
             <option value="candeur-kukatpally">Candeur Kukatpally IDL Lake – Kukatpally (Pre-Launch)</option>
+            <option value="candeur-skyline">Candeur Skyline – Financial District</option>
+            <option value="candeur-lakescape">Candeur Lakescape – Kondapur</option>
+            <option value="candeur-crescent">Candeur Crescent – Near Gachibowli</option>
+            <option value="candeur-twins">Candeur Twins – Miyapur</option>
+            <option value="candeur-c40">Candeur C40 – Miyapur (Ready to Move)</option>
+            <option value="candeur-novo-gardenia">Candeur Novo Gardenia – Bengaluru</option>
             <option value="jains-central-park">Jain's Central Park East – Uppal,Narapally</option>
             <option value="not-sure">Not Sure – Show Me Options</option>
           </select>
@@ -397,41 +604,41 @@
     </div>
     <div class="blog-grid">
       <article class="blog-card">
-        <div class="blog-img" style="background:url('blog/WhatsApp%20Image%202026-07-01%20at%209.25.30%20PM.jpeg') center/cover no-repeat">
+        <div class="blog-img" style="background:url('assets/default-img/high-raise.png') center/cover no-repeat">
           <span class="blog-category">Market Trends</span>
         </div>
         <div class="blog-body">
           <div class="blog-date">June 10, 2026</div>
-          <h3><a href="blog/best-gated-communities-hyderabad-2026.html">Best Gated Communities in Hyderabad 2026</a></h3>
+          <h3><a href="/blog/best-gated-communities-hyderabad-2026">Best Gated Communities in Hyderabad 2026</a></h3>
           <p>A comprehensive review of the top gated communities across Bachupally, Kondapur, Gachibowli and Miyapur — with prices, amenities and possession dates.</p>
-          <a href="blog/best-gated-communities-hyderabad-2026.html" class="blog-read-more">Read More →</a>
+          <a href="/blog/best-gated-communities-hyderabad-2026" class="blog-read-more">Read More →</a>
         </div>
       </article>
       <article class="blog-card">
-        <div class="blog-img" style="background:url('blog/Candure-kukatpally.jpeg') center/cover no-repeat">
+        <div class="blog-img" style="background:url('assets/default-img/image 1.png') center/cover no-repeat">
           <span class="blog-category">Area Guide</span>
         </div>
         <div class="blog-body">
           <div class="blog-date">June 7, 2026</div>
-          <h3><a href="blog/bachupally-vs-miyapur-which-area-is-better.html">Bachupally vs Miyapur: Which Area is Better?</a></h3>
+          <h3><a href="/blog/bachupally-vs-miyapur-which-area-is-better">Bachupally vs Miyapur: Which Area is Better?</a></h3>
           <p>Comparing two of Hyderabad's most popular residential areas on price, connectivity, schools, hospitals and future appreciation potential.</p>
-          <a href="blog/bachupally-vs-miyapur-which-area-is-better.html" class="blog-read-more">Read More →</a>
+          <a href="/blog/bachupally-vs-miyapur-which-area-is-better" class="blog-read-more">Read More →</a>
         </div>
       </article>
       <article class="blog-card">
-        <div class="blog-img" style="background:url('blog/Jains-central-park-east-project.jpeg') center/cover no-repeat">
+        <div class="blog-img" style="background:url('assets/default-img/image 2.png') center/cover no-repeat">
           <span class="blog-category">Project Review</span>
         </div>
         <div class="blog-body">
           <div class="blog-date">June 3, 2026</div>
-          <h3><a href="blog/why-candeur-eternia-getting-attention-it-professionals.html">Why Candeur Eternia is Getting Attention from IT Professionals</a></h3>
+          <h3><a href="/blog/why-candeur-eternia-getting-attention-it-professionals">Why Candeur Eternia is Getting Attention from IT Professionals</a></h3>
           <p>ORR access, Hitech City commute, premium amenities and a flexible payment plan — here's why tech workers are choosing Candeur Eternia.</p>
-          <a href="blog/why-candeur-eternia-getting-attention-it-professionals.html" class="blog-read-more">Read More →</a>
+          <a href="/blog/why-candeur-eternia-getting-attention-it-professionals" class="blog-read-more">Read More →</a>
         </div>
       </article>
     </div>
     <div class="section-cta">
-      <a href="blog/index.html" class="btn btn-outline">View All Articles →</a>
+      <a href="/blog/" class="btn btn-outline">View All Articles →</a>
     </div>
   </div>
 </section>
@@ -529,8 +736,15 @@
           <label for="c-project">Project Interested In</label>
           <select id="c-project" name="project">
             <option value="">Select a project...</option>
-            <option value="candeur-eternia">Candeur Eternia</option>
-            <option value="jains-central-park">Jain's Central Park East</option>
+            <option value="candeur-eternia">Candeur Eternia – Bachupally</option>
+            <option value="candeur-kukatpally">Candeur Kukatpally – IDL Lake</option>
+            <option value="candeur-skyline">Candeur Skyline – Financial District</option>
+            <option value="candeur-lakescape">Candeur Lakescape – Kondapur</option>
+            <option value="candeur-crescent">Candeur Crescent – Near Gachibowli</option>
+            <option value="candeur-twins">Candeur Twins – Miyapur</option>
+            <option value="candeur-c40">Candeur C40 – Miyapur (Ready to Move)</option>
+            <option value="candeur-novo-gardenia">Candeur Novo Gardenia – Bengaluru</option>
+            <option value="jains-central-park">Jain's Central Park East – Uppal</option>
             <option value="not-sure">Not Sure – Show Me Options</option>
           </select>
         </div>
@@ -539,6 +753,17 @@
         </button>
         <p class="form-note">Your details are safe. We never spam.</p>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ DISCLAIMER ═══════ -->
+<section class="disclaimer-section" style="background:#f9f6f0;padding:48px 0;border-top:1px solid #ede9e0">
+  <div class="container">
+    <h4 style="font-family:'Poppins',sans-serif;font-size:0.75rem;font-weight:700;color:#1a1a1a;margin-bottom:14px">Disclaimer</h4>
+    <div style="font-size:0.72rem;color:#888;line-height:1.7">
+      <p style="margin-bottom:12px">The information provided on this website is for general informational and marketing purposes only. This website is operated by an authorized real estate channel partner and is not the official website of any developer or builder. All project details including pricing, availability, specifications, floor plans, amenities, images, and other information are sourced from respective developers and are subject to change without prior notice. While we strive to keep the information accurate and up to date, we do not guarantee the completeness, reliability, or accuracy of any content displayed on this website. The images, visuals, renderings, and illustrations used are for representational purposes only and may not reflect the actual project, layout, or final construction. Actual specifications and deliverables may vary as per the developer's plans and approvals.</p>
+      <p>We do not claim ownership of any project listed and do not directly sell or construct properties. Our role is limited to providing information and facilitating communication between prospective buyers and developers. Any purchase decision, transaction, or agreement is strictly between the buyer and the respective developer. Users are advised to independently verify all project details including RERA registration, approvals, legal status, pricing, and availability directly with the developer before making any investment or purchase decision. By using this website, you acknowledge that any reliance on the information provided is at your own risk, and we shall not be held liable for any loss or damage arising from the use of this website or its content.</p>
     </div>
   </div>
 </section>
@@ -568,29 +793,36 @@
       <div class="footer-col">
         <h4>Projects</h4>
         <ul>
-          <li><a href="candeur-eternia-bachupally.html">Candeur Eternia</a></li>
-          <li><a href="jains-central-park-east.html">Jain's Central Park East</a></li>
+          <li><a href="/candeur-eternia-bachupally">Candeur Eternia</a></li>
+          <li><a href="/candeur-kukatpally/">Candeur Kukatpally</a></li>
+          <li><a href="/candeur-skyline/">Candeur Skyline</a></li>
+          <li><a href="/candeur-lakescape/">Candeur Lakescape</a></li>
+          <li><a href="/candeur-crescent/">Candeur Crescent</a></li>
+          <li><a href="/candeur-twins/">Candeur Twins</a></li>
+          <li><a href="/candeur-c40/">Candeur C40</a></li>
+          <li><a href="/candeur-novo-gardenia/">Candeur Novo Gardenia</a></li>
+          <li><a href="/jains-central-park-east">Jain's Central Park East</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Locations</h4>
         <ul>
-          <li><a href="apartments-in-bachupally.html">Bachupally</a></li>
-          <li><a href="apartments-near-orr-hyderabad.html">Near ORR</a></li>
-          <li><a href="gated-community-apartments-hyderabad.html">Gated Communities</a></li>
-          <li><a href="3-bhk-apartments-bachupally.html">3 BHK Bachupally</a></li>
-          <li><a href="best-apartments-under-1-crore-hyderabad.html">Under ₹1 Crore</a></li>
+          <li><a href="/apartments-in-bachupally">Bachupally</a></li>
+          <li><a href="/apartments-near-orr-hyderabad">Near ORR</a></li>
+          <li><a href="/gated-community-apartments-hyderabad">Gated Communities</a></li>
+          <li><a href="/3-bhk-apartments-bachupally">3 BHK Bachupally</a></li>
+          <li><a href="/best-apartments-under-1-crore-hyderabad">Under ₹1 Crore</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Blog</h4>
         <ul>
-          <li><a href="blog/candeur-kukatpally-pre-launch-2026.html">Candeur Kukatpally Pre-Launch</a></li>
-          <li><a href="blog/best-gated-communities-hyderabad-2026.html">Best Gated Communities 2026</a></li>
-          <li><a href="blog/jains-central-park-east-review-2026.html">Jain's CPE Review</a></li>
-          <li><a href="blog/bachupally-vs-miyapur-which-area-is-better.html">Bachupally vs Miyapur</a></li>
-          <li><a href="blog/why-candeur-eternia-getting-attention-it-professionals.html">Candeur Eternia Review</a></li>
-          <li><a href="blog/index.html">All Articles →</a></li>
+          <li><a href="/blog/candeur-kukatpally-pre-launch-2026">Candeur Kukatpally Pre-Launch</a></li>
+          <li><a href="/blog/best-gated-communities-hyderabad-2026">Best Gated Communities 2026</a></li>
+          <li><a href="/blog/jains-central-park-east-review-2026">Jain's CPE Review</a></li>
+          <li><a href="/blog/bachupally-vs-miyapur-which-area-is-better">Bachupally vs Miyapur</a></li>
+          <li><a href="/blog/why-candeur-eternia-getting-attention-it-professionals">Candeur Eternia Review</a></li>
+          <li><a href="/blog/">All Articles →</a></li>
         </ul>
       </div>
     </div>
@@ -620,8 +852,15 @@
       <input type="tel" id="p-phone" name="phone" placeholder="+91 Mobile Number" required/>
       <select id="p-project" name="project">
         <option value="">Project Interested In...</option>
-        <option value="candeur-eternia">Candeur Eternia</option>
-        <option value="jains-central-park">Jain's Central Park East</option>
+        <option value="candeur-eternia">Candeur Eternia – Bachupally</option>
+        <option value="candeur-kukatpally">Candeur Kukatpally – IDL Lake</option>
+        <option value="candeur-skyline">Candeur Skyline – Financial District</option>
+        <option value="candeur-lakescape">Candeur Lakescape – Kondapur</option>
+        <option value="candeur-crescent">Candeur Crescent – Near Gachibowli</option>
+        <option value="candeur-twins">Candeur Twins – Miyapur</option>
+        <option value="candeur-c40">Candeur C40 – Miyapur (Ready to Move)</option>
+        <option value="candeur-novo-gardenia">Candeur Novo Gardenia – Bengaluru</option>
+        <option value="jains-central-park">Jain's Central Park East – Uppal</option>
         <option value="not-sure">Show Me All Options</option>
       </select>
       <button type="submit" class="btn btn-whatsapp btn-block">

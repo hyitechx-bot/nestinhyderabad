@@ -131,7 +131,9 @@ a { text-decoration: none; color: inherit; }
 
 /* ===== PROJECTS ===== */
 .projects { background: var(--light); }
-.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.projects-grid { display: flex; gap: 28px; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; padding: 10px 0 20px; }
+.projects-grid::-webkit-scrollbar { display: none; }
+.projects-grid .project-card { min-width: 360px; max-width: 380px; flex-shrink: 0; }
 .project-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; }
 .project-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .project-card.featured-project { grid-column: span 1; }
@@ -225,7 +227,6 @@ a { text-decoration: none; color: inherit; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 768px) {
@@ -236,7 +237,6 @@ a { text-decoration: none; color: inherit; }
   .about-badge { right: 0; bottom: -16px; }
   .why-grid { grid-template-columns: 1fr 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 24px; }
   .contact-features { grid-template-columns: 1fr; }
 }

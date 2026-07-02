@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://nestinhyderabad.com/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -19,7 +19,55 @@
   </url>
   <url>
     <loc>https://nestinhyderabad.com/jains-central-park-east</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR SKYLINE ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-skyline/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR LAKESCAPE ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-lakescape/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR CRESCENT ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-crescent/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR TWINS ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-twins/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR C40 ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-c40/</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ CANDEUR NOVO GARDENIA ═══ -->
+  <url>
+    <loc>https://nestinhyderabad.com/candeur-novo-gardenia/</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -32,67 +80,67 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-price.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-price</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-floor-plan.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-floor-plan</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-amenities.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-amenities</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-location.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/candeur-kukatpally-location</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/2-5-bhk-in-candeur-kukatpally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/2-5-bhk-in-candeur-kukatpally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/3-bhk-in-candeur-kukatpally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/3-bhk-in-candeur-kukatpally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-in-kukatpally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-in-kukatpally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-hitech-city.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-hitech-city</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-miyapur.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-miyapur</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-gachibowli.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/flats-near-gachibowli</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-kukatpally/gated-community-kukatpally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-kukatpally/gated-community-kukatpally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -107,6 +155,12 @@
   </url>
   <url>
     <loc>https://nestinhyderabad.com/apartments-in-uppal</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nestinhyderabad.com/apartments-in-medchal</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -168,145 +222,145 @@
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-price.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-price</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-floor-plan.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-floor-plan</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-amenities.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-amenities</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-location.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-location</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-gallery.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-gallery</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-brochure.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-brochure</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-reviews.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-reviews</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-offers.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-offers</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-calculator.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/candeur-eternia-calculator</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/2-bhk-in-candeur-eternia.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/2-bhk-in-candeur-eternia</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/2-5-bhk-in-candeur-eternia.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/2-5-bhk-in-candeur-eternia</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/3-bhk-in-candeur-eternia.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/3-bhk-in-candeur-eternia</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-in-bachupally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-in-bachupally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-miyapur.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-miyapur</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-hitech-city.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-hitech-city</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-gachibowli.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-gachibowli</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-kondapur.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-kondapur</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-madhapur.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-madhapur</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-kukatpally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-kukatpally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-lingampally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-lingampally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-nanakramguda.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-nanakramguda</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-pragathi-nagar.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/flats-near-pragathi-nagar</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/gated-community-bachupally.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/gated-community-bachupally</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nestinhyderabad.com/candeur-eternia/gated-community-hyderabad.html</loc>
+    <loc>https://nestinhyderabad.com/candeur-eternia/gated-community-hyderabad</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
