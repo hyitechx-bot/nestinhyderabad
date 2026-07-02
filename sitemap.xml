@@ -148,6 +148,24 @@
 
   <!-- ═══ ROOT LOCATION/SEO PAGES ═══ -->
   <url>
+    <loc>https://nestinhyderabad.com/flats-in-hyderabad</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://nestinhyderabad.com/flats-in-madhapur</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nestinhyderabad.com/flats-in-hyderabad-under-50-lakhs</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://nestinhyderabad.com/flats-for-sale-in-hyderabad</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
