@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <!-- Homepage -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.nestinhyderabad.com/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- ═══ MAIN PROJECT PAGES ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-eternia-bachupally.html</loc>
     <lastmod>2026-07-01</lastmod>
@@ -23,56 +18,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR SKYLINE ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-skyline/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR LAKESCAPE ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-lakescape/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR CRESCENT ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-crescent/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR TWINS ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-twins/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR C40 ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-c40/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR NOVO GARDENIA ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-novo-gardenia/</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ═══ CANDEUR KUKATPALLY (NEW) ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-kukatpally/</loc>
     <lastmod>2026-07-01</lastmod>
@@ -145,8 +126,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ═══ ROOT LOCATION/SEO PAGES ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/flats-in-hyderabad.html</loc>
     <lastmod>2026-07-02</lastmod>
@@ -255,8 +234,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ═══ CANDEUR ETERNIA SUBPAGES ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/candeur-eternia/</loc>
     <lastmod>2026-07-01</lastmod>
@@ -407,8 +384,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ═══ JAIN'S CENTRAL PARK EAST SUBPAGES ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/jains-central-park-east-price.html</loc>
     <lastmod>2026-07-01</lastmod>
@@ -439,8 +414,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- ═══ BLOG ═══ -->
   <url>
     <loc>https://www.nestinhyderabad.com/blog/</loc>
     <lastmod>2026-07-01</lastmod>
@@ -477,8 +450,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-
   <url>
     <loc>https://www.nestinhyderabad.com/blog/top-reasons-to-invest-in-hyderabad-real-estate-2026.html</loc>
     <lastmod>2026-07-03</lastmod>
@@ -503,15 +474,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-
-  <!-- --- SATTVA LAGO --- -->
   <url>
     <loc>https://www.nestinhyderabad.com/sattva-lago/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.nestinhyderabad.com/blog/sattva-lago-kokapet-neopolis-review-2026.html</loc>
     <lastmod>2026-07-04</lastmod>
