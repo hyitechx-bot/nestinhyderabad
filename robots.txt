@@ -7,4 +7,4 @@ Disallow: /assets/css/
 User-agent: Googlebot-Image
 Allow: /
 
-Sitemap: https://nestinhyderabad.com/sitemap.xml
+Sitemap: https://www.nestinhyderabad.com/sitemap.xml
