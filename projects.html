@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>All Projects – Premium Apartments in Hyderabad | NestIn Hyderabad</title>
+<meta name="description" content="Browse all premium apartment projects in Hyderabad. Filter by location, budget, BHK, status. Candeur, Sattva & Jain projects. RERA verified. Zero brokerage."/>
+<link rel="canonical" href="https://www.nestinhyderabad.com/projects.html"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23E8B84B'/><path d='M16 6L6 15h3v11h5v-6h4v6h5V15h3L16 6z' fill='%230a0a0a'/></svg>"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<style>
+.projects-hero{background:linear-gradient(135deg,#0f0f0f,#1a1208);padding:100px 0 40px;text-align:center;position:relative;overflow:hidden}
+.projects-hero::before{content:'';position:absolute;inset:0;background:url('assets/default-img/high-raise.png') center/cover;opacity:0.12}
+.projects-hero *{position:relative;z-index:1}
+.projects-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);color:#fff;font-weight:700;margin-bottom:8px}
+.projects-hero p{color:rgba(255,255,255,0.7);font-size:0.95rem;margin-bottom:28px}
+</style>
+<style>
+.search-box{background:#fff;border-radius:12px;padding:16px 20px;max-width:700px;margin:0 auto;display:flex;gap:10px;align-items:center;box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.search-box select,.search-box input{padding:12px 14px;border:1.5px solid #e8e4dc;border-radius:8px;font-size:0.88rem;font-family:inherit;flex:1;min-width:0}
+.search-box select:focus,.search-box input:focus{outline:none;border-color:#E8B84B}
+.search-btn{background:#E8B84B;color:#fff;border:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.88rem;cursor:pointer;white-space:nowrap}
+.search-btn:hover{background:#c9a030}
+.location-pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;padding:20px 0 10px}
+.loc-pill{padding:7px 16px;border-radius:50px;border:1.5px solid #e0dbd0;font-size:0.8rem;font-weight:500;color:#555;cursor:pointer;background:#fff;transition:all 0.2s}
+.loc-pill:hover,.loc-pill.active{background:#E8B84B;color:#fff;border-color:#E8B84B}
+.section-label{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;text-align:center;margin:32px 0 20px;color:#1a1a1a}
+.projects-grid-portal{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;padding-bottom:40px}
+</style>
+<style>
+.p-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.07);transition:transform 0.2s,box-shadow 0.2s;cursor:pointer}
+.p-card:hover{transform:translateY(-4px);box-shadow:0 8px 32px rgba(0,0,0,0.12)}
+.p-card-img{height:200px;position:relative;background-size:cover;background-position:center}
+.p-card-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6) 0%,transparent 50%)}
+.p-badge{position:absolute;top:12px;left:12px;background:#E8B84B;color:#000;padding:4px 12px;border-radius:20px;font-size:0.7rem;font-weight:700;z-index:2}
+.p-card-body{padding:18px 20px}
+.p-card-title{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:700;color:#1a1a1a;margin-bottom:4px}
+.p-card-loc{font-size:0.8rem;color:#888;margin-bottom:10px}
+.p-card-price{font-family:'Poppins',sans-serif;font-size:1rem;font-weight:700;color:#E8B84B;margin-bottom:12px}
+.p-card-actions{display:flex;gap:8px;align-items:center}
+.p-card-actions .view-btn{flex:1;text-align:center;padding:10px;border:1.5px solid #e0dbd0;border-radius:8px;font-size:0.82rem;font-weight:600;color:#333;text-decoration:none;transition:all 0.2s}
+.p-card-actions .view-btn:hover{border-color:#E8B84B;color:#E8B84B}
+.p-card-actions .icon-btn{width:38px;height:38px;border-radius:8px;border:1.5px solid #e0dbd0;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:1rem;transition:all 0.2s}
+.p-card-actions .icon-btn:hover{border-color:#E8B84B;background:rgba(232,184,75,0.05)}
+.no-results{text-align:center;padding:60px;color:#999;font-size:0.95rem}
+@media(max-width:768px){.search-box{flex-direction:column}.projects-grid-portal{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <div class="logo-icon"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3L4 14h3v13h6v-7h6v7h6V14h3L16 3z" fill="#0a0a0a"/></svg></div>
+      <div class="logo-text"><span class="logo-name">NestIn</span><span class="logo-sub">Hyderabad</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects.html" class="active">Projects</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/919391954743" class="btn btn-whatsapp nav-cta" target="_blank" rel="noopener">WhatsApp Now</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="projects-hero">
+  <h1>Find Your Dream Home</h1>
+  <p>RERA verified projects across Hyderabad & Bengaluru. Zero brokerage.</p>
+  <div class="search-box">
+    <select id="filterType">
+      <option value="">All Types</option>
+      <option value="Apartment">Apartment</option>
+    </select>
+    <select id="filterBudget">
+      <option value="">Budget</option>
+      <option value="under75">Under ₹75L</option>
+      <option value="75-1cr">₹75L – 1 Cr</option>
+      <option value="1-1.5cr">₹1 – 1.5 Cr</option>
+      <option value="1.5-5cr">₹1.5 – 5 Cr</option>
+      <option value="above5cr">Above ₹5 Cr</option>
+    </select>
+    <select id="filterBhk">
+      <option value="">BHK</option>
+      <option value="2 BHK">2 BHK</option>
+      <option value="2.5 BHK">2.5 BHK</option>
+      <option value="3 BHK">3 BHK</option>
+      <option value="3.5 BHK">3.5 BHK</option>
+      <option value="4 BHK">4 BHK</option>
+    </select>
+    <button class="search-btn" id="searchBtn">🔍 Search</button>
+  </div>
+</section>
+<div class="container">
+  <div class="location-pills" id="locationPills">
+    <span class="loc-pill active" data-loc="">All</span>
+    <span class="loc-pill" data-loc="Bachupally">Bachupally</span>
+    <span class="loc-pill" data-loc="Kukatpally">Kukatpally</span>
+    <span class="loc-pill" data-loc="Miyapur">Miyapur</span>
+    <span class="loc-pill" data-loc="Kondapur">Kondapur</span>
+    <span class="loc-pill" data-loc="Gachibowli">Gachibowli</span>
+    <span class="loc-pill" data-loc="Kokapet">Kokapet</span>
+    <span class="loc-pill" data-loc="Financial District">Financial District</span>
+    <span class="loc-pill" data-loc="Narapally">Narapally</span>
+    <span class="loc-pill" data-loc="Varthur">Bengaluru</span>
+  </div>
+
+  <h2 class="section-label" id="sectionTitle">ALL PROJECTS</h2>
+
+  <div class="projects-grid-portal" id="projectsGrid"></div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div style="text-align:center;padding:32px 0 0;">
+      <p style="color:rgba(255,255,255,0.3);font-size:0.8rem;">&copy; 2026 Nest In Hyderabad. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919391954743" class="float-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+<script>
+(function(){
+var grid=document.getElementById('projectsGrid');
+var titleEl=document.getElementById('sectionTitle');
+var activeLoc='';
+
+var projects=[
+{id:"candeur-eternia",slug:"candeur-eternia-bachupally.html",name:"Candeur Eternia",builder:"Candeur Constructions",status:"Under Construction",bhk:["2 BHK","2.5 BHK","3 BHK"],area:"Bachupally",city:"Hyderabad",price:12000000,priceText:"\u20B91.2 Cr onwards",land:"7 Acres",rera:"P02200010709",featured:true,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Eternia"},
+{id:"candeur-kukatpally",slug:"candeur-kukatpally/",name:"Candeur Kukatpally - IDL Lake",builder:"Candeur Constructions",status:"Pre Launch",bhk:["2.5 BHK","3 BHK"],area:"Kukatpally",city:"Hyderabad",price:0,priceText:"Pre-Launch Pricing",land:"20 Acres",rera:"",featured:true,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Kukatpally"},
+{id:"candeur-skyline",slug:"candeur-skyline/",name:"Candeur Skyline",builder:"Candeur Constructions",status:"Under Construction",bhk:["4 BHK"],area:"Financial District",city:"Hyderabad",price:90000000,priceText:"\u20B99 Cr onwards",land:"",rera:"P02400005946",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Skyline"},
+{id:"candeur-lakescape",slug:"candeur-lakescape/",name:"Candeur Lakescape",builder:"Candeur Constructions",status:"Under Construction",bhk:["2 BHK","2.5 BHK","3 BHK","3.5 BHK"],area:"Kondapur",city:"Hyderabad",price:9000000,priceText:"\u20B990L onwards",land:"9.11 Acres",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Lakescape"},
+{id:"candeur-crescent",slug:"candeur-crescent/",name:"Candeur Crescent",builder:"Candeur Constructions",status:"Ready to Move",bhk:["2.5 BHK","3 BHK"],area:"Gachibowli",city:"Hyderabad",price:10000000,priceText:"\u20B91 Cr onwards",land:"",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Crescent"},
+{id:"candeur-twins",slug:"candeur-twins/",name:"Candeur Twins",builder:"Candeur Constructions",status:"Under Construction",bhk:["3 BHK"],area:"Miyapur",city:"Hyderabad",price:12000000,priceText:"\u20B91.2 Cr onwards",land:"",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Twins"},
+{id:"candeur-c40",slug:"candeur-c40/",name:"Candeur C40",builder:"Candeur Constructions",status:"Ready to Move",bhk:["2 BHK","2.5 BHK","3 BHK"],area:"Miyapur",city:"Hyderabad",price:7000000,priceText:"\u20B970L onwards",land:"",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20C40"},
+{id:"candeur-novo",slug:"candeur-novo-gardenia/",name:"Candeur Novo Gardenia",builder:"Candeur Constructions",status:"Under Construction",bhk:["2 BHK","3 BHK"],area:"Varthur",city:"Bengaluru",price:8000000,priceText:"\u20B980L onwards",land:"",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Candeur%20Novo%20Gardenia"},
+{id:"jains-cpe",slug:"jains-central-park-east-hyderabad.html",name:"Jain's Central Park East",builder:"Jain Constructions",status:"Under Construction",bhk:["2 BHK","3 BHK"],area:"Narapally",city:"Hyderabad",price:0,priceText:"Competitive Pricing",land:"",rera:"",featured:false,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Jains%20Central%20Park%20East"},
+{id:"sattva-lago",slug:"sattva-lago/",name:"Sattva Lago",builder:"Sattva Group",status:"New Launch",bhk:["3 BHK","3.5 BHK","4 BHK"],area:"Kokapet",city:"Hyderabad",price:45000000,priceText:"\u20B94.5 Cr onwards",land:"10 Acres",rera:"P02400010916",featured:true,img:"assets/default-img/high-raise.png",wa:"https://wa.me/919391954743?text=Hi%2C%20Sattva%20Lago%20Kokapet"}
+];
+function render(list){
+  if(!list.length){grid.innerHTML='<div class="no-results">No projects match. Try different filters.</div>';return;}
+  grid.innerHTML=list.map(function(p){
+    var badge='';
+    if(p.status==='New Launch')badge='<div class="p-badge">NEW LAUNCH</div>';
+    else if(p.status==='Pre Launch')badge='<div class="p-badge">PRE LAUNCH</div>';
+    else if(p.status==='Ready to Move')badge='<div class="p-badge" style="background:#22c55e;color:#fff">READY TO MOVE</div>';
+    else if(p.featured)badge='<div class="p-badge">FEATURED</div>';
+    else badge='<div class="p-badge" style="background:#555;color:#fff">UNDER CONSTRUCTION</div>';
+    return '<div class="p-card" onclick="window.location.href=\'/'+p.slug+'\'">' +
+      '<div class="p-card-img" style="background-image:url(\''+p.img+'\')">' + badge + '</div>' +
+      '<div class="p-card-body">' +
+      '<div class="p-card-title">'+p.name+'</div>' +
+      '<div class="p-card-loc">📍 '+p.area+', '+p.city+(p.rera?' • RERA: '+p.rera:'')+'</div>' +
+      '<div class="p-card-price">'+p.priceText+'</div>' +
+      '<div class="p-card-actions">' +
+      '<a href="/'+p.slug+'" class="view-btn" onclick="event.stopPropagation()">View Details</a>' +
+      '<a href="'+p.wa+'" class="icon-btn" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="WhatsApp"><svg viewBox="0 0 24 24" fill="#25d366" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>' +
+      '<a href="tel:+919391954743" class="icon-btn" onclick="event.stopPropagation()" title="Call"><svg viewBox="0 0 24 24" fill="#333" width="18" height="18"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>' +
+      '</div></div></div>';
+  }).join('');
+}
+
+function applyFilters(){
+  var bhk=document.getElementById('filterBhk').value;
+  var budget=document.getElementById('filterBudget').value;
+  var filtered=projects.filter(function(p){
+    if(activeLoc&&p.area!==activeLoc)return false;
+    if(bhk&&p.bhk.indexOf(bhk)===-1)return false;
+    if(budget){
+      var pr=p.price;
+      if(budget==='under75'&&(pr===0||pr>=7500000))return false;
+      if(budget==='75-1cr'&&(pr<7500000||pr>=10000000))return false;
+      if(budget==='1-1.5cr'&&(pr<10000000||pr>=15000000))return false;
+      if(budget==='1.5-5cr'&&(pr<15000000||pr>=50000000))return false;
+      if(budget==='above5cr'&&pr<50000000)return false;
+    }
+    return true;
+  });
+  titleEl.textContent=activeLoc?(activeLoc.toUpperCase()+' PROJECTS'):'ALL PROJECTS';
+  render(filtered);
+}
+
+// Location pills
+document.getElementById('locationPills').addEventListener('click',function(e){
+  var pill=e.target.closest('.loc-pill');
+  if(!pill)return;
+  document.querySelectorAll('.loc-pill').forEach(function(p){p.classList.remove('active');});
+  pill.classList.add('active');
+  activeLoc=pill.dataset.loc;
+  applyFilters();
+});
+
+// Search button & filter changes
+document.getElementById('searchBtn').addEventListener('click',applyFilters);
+document.getElementById('filterBhk').addEventListener('change',applyFilters);
+document.getElementById('filterBudget').addEventListener('change',applyFilters);
+
+// Initial render
+render(projects);
+})();
+</script>
+</body>
+</html>
