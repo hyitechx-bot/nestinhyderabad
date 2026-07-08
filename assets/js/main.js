@@ -179,4 +179,20 @@
     });
   });
 
+  // ── Hero Search → Projects Page ──
+  var heroSearch = document.getElementById('heroSearch');
+  if (heroSearch) {
+    heroSearch.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var loc = document.getElementById('hsLoc').value;
+      var bhk = document.getElementById('hsBhk').value;
+      var budget = document.getElementById('hsBudget').value;
+      var params = [];
+      if (loc) params.push('loc=' + encodeURIComponent(loc));
+      if (bhk) params.push('bhk=' + encodeURIComponent(bhk));
+      if (budget) params.push('budget=' + encodeURIComponent(budget));
+      window.location.href = '/projects.html' + (params.length ? '?' + params.join('&') : '');
+    });
+  }
+
 })();

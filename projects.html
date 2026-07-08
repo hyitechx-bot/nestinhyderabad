@@ -201,8 +201,20 @@ document.getElementById('searchBtn').addEventListener('click',applyFilters);
 document.getElementById('filterBhk').addEventListener('change',applyFilters);
 document.getElementById('filterBudget').addEventListener('change',applyFilters);
 
-// Initial render
-render(projects);
+// Initial render + auto-apply URL params
+var params=new URLSearchParams(window.location.search);
+if(params.get('loc')){
+  var locPill=document.querySelector('.loc-pill[data-loc="'+params.get('loc')+'"]');
+  if(locPill){locPill.click();}
+}
+if(params.get('bhk')){document.getElementById('filterBhk').value=params.get('bhk');}
+if(params.get('budget')){document.getElementById('filterBudget').value=params.get('budget');}
+if(params.get('loc')||params.get('bhk')||params.get('budget')){
+  activeLoc=params.get('loc')||'';
+  applyFilters();
+} else {
+  render(projects);
+}
 })();
 </script>
 </body>
