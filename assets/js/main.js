@@ -179,6 +179,27 @@
     });
   });
 
+  // ── Home AI Finder → AI Finder Page ──
+  var homeAiForm = document.getElementById('homeAiFinder');
+  if (homeAiForm) {
+    homeAiForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var query = document.getElementById('homeAiInput').value.trim();
+      if (query) {
+        window.location.href = '/ai-finder.html?q=' + encodeURIComponent(query);
+      } else {
+        window.location.href = '/ai-finder.html';
+      }
+    });
+    // Example pills
+    document.querySelectorAll('.home-ai-eg').forEach(function(eg) {
+      eg.addEventListener('click', function() {
+        document.getElementById('homeAiInput').value = this.textContent;
+        window.location.href = '/ai-finder.html?q=' + encodeURIComponent(this.textContent);
+      });
+    });
+  }
+
   // ── Hero Search → Projects Page ──
   var heroSearch = document.getElementById('heroSearch');
   if (heroSearch) {

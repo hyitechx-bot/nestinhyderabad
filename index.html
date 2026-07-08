@@ -153,8 +153,8 @@
     </div>
     <!-- Project Search Bar -->
     <div style="margin-top:36px;max-width:700px">
-      <form id="heroSearch" style="display:flex;gap:8px;background:rgba(255,255,255,0.95);border-radius:12px;padding:8px;box-shadow:0 8px 32px rgba(0,0,0,0.3)">
-        <select id="hsLoc" style="flex:1;padding:12px 14px;border:none;border-radius:8px;font-size:0.88rem;font-family:inherit;color:#333;background:transparent">
+      <form id="heroSearch" style="display:flex;flex-wrap:wrap;gap:8px;background:rgba(255,255,255,0.95);border-radius:12px;padding:10px;box-shadow:0 8px 32px rgba(0,0,0,0.3)">
+        <select id="hsLoc" style="flex:1 1 140px;min-width:0;padding:12px 10px;border:1px solid #eee;border-radius:8px;font-size:0.85rem;font-family:inherit;color:#333;background:#fff">
           <option value="">📍 Location</option>
           <option value="Bachupally">Bachupally</option>
           <option value="Kukatpally">Kukatpally</option>
@@ -164,7 +164,7 @@
           <option value="Kokapet">Kokapet</option>
           <option value="Financial District">Financial District</option>
         </select>
-        <select id="hsBhk" style="flex:1;padding:12px 14px;border:none;border-radius:8px;font-size:0.88rem;font-family:inherit;color:#333;background:transparent">
+        <select id="hsBhk" style="flex:1 1 100px;min-width:0;padding:12px 10px;border:1px solid #eee;border-radius:8px;font-size:0.85rem;font-family:inherit;color:#333;background:#fff">
           <option value="">🏠 BHK</option>
           <option value="2 BHK">2 BHK</option>
           <option value="2.5 BHK">2.5 BHK</option>
@@ -172,15 +172,15 @@
           <option value="3.5 BHK">3.5 BHK</option>
           <option value="4 BHK">4 BHK</option>
         </select>
-        <select id="hsBudget" style="flex:1;padding:12px 14px;border:none;border-radius:8px;font-size:0.88rem;font-family:inherit;color:#333;background:transparent">
+        <select id="hsBudget" style="flex:1 1 120px;min-width:0;padding:12px 10px;border:1px solid #eee;border-radius:8px;font-size:0.85rem;font-family:inherit;color:#333;background:#fff">
           <option value="">💰 Budget</option>
           <option value="under75">Under ₹75L</option>
-          <option value="75-1cr">₹75L – 1 Cr</option>
-          <option value="1-1.5cr">₹1 – 1.5 Cr</option>
-          <option value="1.5-5cr">₹1.5 – 5 Cr</option>
-          <option value="above5cr">Above ₹5 Cr</option>
+          <option value="75-1cr">₹75L – 1Cr</option>
+          <option value="1-1.5cr">₹1 – 1.5Cr</option>
+          <option value="1.5-5cr">₹1.5 – 5Cr</option>
+          <option value="above5cr">Above ₹5Cr</option>
         </select>
-        <button type="submit" style="padding:12px 24px;background:#E8B84B;color:#000;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;white-space:nowrap">🔍 Search</button>
+        <button type="submit" style="flex:1 1 100%;padding:12px 20px;background:#E8B84B;color:#000;border:none;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer">🔍 Search Projects</button>
       </form>
     </div>
   </div>
@@ -963,5 +963,6 @@
 </div>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/ai-chat.js"></script>
 </body>
 </html>

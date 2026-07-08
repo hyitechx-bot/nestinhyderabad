@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-07-07",
   "version": "1.0",
-  "totalProjects": 10,
+  "totalProjects": 35,
   "projects": [
     {
       "id": "candeur-eternia",
@@ -573,6 +573,1081 @@
       "contact": {
         "phone": "+91 93919 54743",
         "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Sattva%20Lago%20Kokapet."
+      }
+    },
+    {
+      "id": "aparna-cyberscape",
+      "slug": "",
+      "projectName": "Aparna Cyberscape",
+      "builder": "Aparna Constructions",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400002127",
+      "featured": false,
+      "location": {
+        "area": "Nallagandla",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Aparna%20Cyberscape"
+      }
+    },
+    {
+      "id": "aparna-newlands",
+      "slug": "",
+      "projectName": "Aparna Newlands",
+      "builder": "Aparna Constructions",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100007480",
+      "featured": false,
+      "location": {
+        "area": "Tellapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Aparna%20Newlands"
+      }
+    },
+    {
+      "id": "aparna-zenon-phase-3",
+      "slug": "",
+      "projectName": "Aparna Zenon Phase 3",
+      "builder": "Aparna Constructions",
+      "status": "Pre Launch",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400003722",
+      "featured": false,
+      "location": {
+        "area": "Puppalaguda",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Pre Launch"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Aparna%20Zenon%20Phase%203"
+      }
+    },
+    {
+      "id": "brigade-gateway-neopolis",
+      "slug": "",
+      "projectName": "Brigade Gateway Neopolis",
+      "builder": "Brigade Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400009142",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Brigade%20Gateway%20Neopolis"
+      }
+    },
+    {
+      "id": "godrej-madison-avenue",
+      "slug": "",
+      "projectName": "Godrej Madison Avenue",
+      "builder": "Godrej Properties",
+      "status": "Pre Launch",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400009227",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Pre Launch"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20Madison%20Avenue"
+      }
+    },
+    {
+      "id": "godrej-neopolis",
+      "slug": "",
+      "projectName": "Godrej Neopolis",
+      "builder": "Godrej Properties",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400009227",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20Neopolis"
+      }
+    },
+    {
+      "id": "godrej-regal-pavilion",
+      "slug": "",
+      "projectName": "Godrej Regal Pavilion",
+      "builder": "Godrej Properties",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400009910",
+      "featured": false,
+      "location": {
+        "area": "Gaganpahad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Godrej%20Regal%20Pavilion"
+      }
+    },
+    {
+      "id": "mantri-celestia",
+      "slug": "",
+      "projectName": "Mantri Celestia",
+      "builder": "Mantri Developers",
+      "status": "Ready to Move",
+      "approval": "RERA Approved",
+      "reraNumber": "REA02400000010",
+      "featured": false,
+      "location": {
+        "area": "Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Ready to Move"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Mantri%20Celestia"
+      }
+    },
+    {
+      "id": "mantri-euphoria",
+      "slug": "",
+      "projectName": "Mantri Euphoria",
+      "builder": "Mantri Developers",
+      "status": "Ready to Move",
+      "approval": "RERA Approved",
+      "reraNumber": "REA02400000010",
+      "featured": false,
+      "location": {
+        "area": "Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Ready to Move"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Mantri%20Euphoria"
+      }
+    },
+    {
+      "id": "my-home-tridasa",
+      "slug": "",
+      "projectName": "My Home Tridasa",
+      "builder": "My Home Constructions",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100001916",
+      "featured": false,
+      "location": {
+        "area": "Tellapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20My%20Home%20Tridasa"
+      }
+    },
+    {
+      "id": "my-home-vanya",
+      "slug": "",
+      "projectName": "My Home Vanya",
+      "builder": "My Home Constructions",
+      "status": "Pre Launch",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400007342",
+      "featured": false,
+      "location": {
+        "area": "Near Neopolis",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Pre Launch"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20My%20Home%20Vanya"
+      }
+    },
+    {
+      "id": "phoenix-equinox",
+      "slug": "",
+      "projectName": "Phoenix Equinox",
+      "builder": "Phoenix Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400007327",
+      "featured": false,
+      "location": {
+        "area": "Hitech City",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Phoenix%20Equinox"
+      }
+    },
+    {
+      "id": "prestige-beverly-hills",
+      "slug": "",
+      "projectName": "Prestige Beverly Hills",
+      "builder": "Prestige Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400003715",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Prestige%20Beverly%20Hills"
+      }
+    },
+    {
+      "id": "prestige-clairemont",
+      "slug": "",
+      "projectName": "Prestige Clairemont",
+      "builder": "Prestige Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400005677",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Prestige%20Clairemont"
+      }
+    },
+    {
+      "id": "prestige-high-fields",
+      "slug": "",
+      "projectName": "Prestige High Fields",
+      "builder": "Prestige Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400002893",
+      "featured": false,
+      "location": {
+        "area": "Nanakramguda",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Prestige%20High%20Fields"
+      }
+    },
+    {
+      "id": "prestige-vaishnaoi-rainbow-waters",
+      "slug": "",
+      "projectName": "Prestige Vaishnaoi Rainbow Waters",
+      "builder": "Prestige Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400006240",
+      "featured": false,
+      "location": {
+        "area": "Raidurgam",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Prestige%20Vaishnaoi%20Rainbow%20Waters"
+      }
+    },
+    {
+      "id": "rajapushpa-aurelia",
+      "slug": "",
+      "projectName": "Rajapushpa Aurelia",
+      "builder": "Rajapushpa Properties",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100007180",
+      "featured": false,
+      "location": {
+        "area": "Tellapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Rajapushpa%20Aurelia"
+      }
+    },
+    {
+      "id": "rajapushpa-lifestyle-city",
+      "slug": "",
+      "projectName": "Rajapushpa Lifestyle City",
+      "builder": "Rajapushpa Properties",
+      "status": "Ready to Move",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100003723",
+      "featured": false,
+      "location": {
+        "area": "Tellapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Ready to Move"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Rajapushpa%20Lifestyle%20City"
+      }
+    },
+    {
+      "id": "rajapushpa-manchirevula-project",
+      "slug": "",
+      "projectName": "Rajapushpa Manchirevula Project",
+      "builder": "Rajapushpa Properties",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400007500",
+      "featured": false,
+      "location": {
+        "area": "Manchirevula",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Rajapushpa%20Manchirevula%20Project"
+      }
+    },
+    {
+      "id": "ramky-nextown",
+      "slug": "",
+      "projectName": "Ramky Nextown",
+      "builder": "Ramky Estates",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100007370",
+      "featured": false,
+      "location": {
+        "area": "Isnapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Ramky%20Nextown"
+      }
+    },
+    {
+      "id": "ramky-one-odyssey",
+      "slug": "",
+      "projectName": "Ramky One Odyssey",
+      "builder": "Ramky Estates",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02400003991",
+      "featured": false,
+      "location": {
+        "area": "Kokapet",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["3 BHK", "4 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Ramky%20One%20Odyssey"
+      }
+    },
+    {
+      "id": "ramky-one-orion",
+      "slug": "",
+      "projectName": "Ramky One Orion",
+      "builder": "Ramky Estates",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P02200005803",
+      "featured": false,
+      "location": {
+        "area": "Pocharam/Uppal",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Ramky%20One%20Orion"
+      }
+    },
+    {
+      "id": "ramky-one-symphony",
+      "slug": "",
+      "projectName": "Ramky One Symphony",
+      "builder": "Ramky Estates",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "P01100003145",
+      "featured": false,
+      "location": {
+        "area": "Patancheru",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["RERA Approved", "Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Ramky%20One%20Symphony"
+      }
+    },
+    {
+      "id": "urbanrise-on-cloud-33",
+      "slug": "",
+      "projectName": "Urbanrise On Cloud 33",
+      "builder": "Urbanrise",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "",
+      "featured": false,
+      "location": {
+        "area": "Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Urbanrise%20On%20Cloud%2033"
+      }
+    },
+    {
+      "id": "the-prestige-city-hyderabad",
+      "slug": "",
+      "projectName": "The Prestige City Hyderabad",
+      "builder": "Prestige Group",
+      "status": "Under Construction",
+      "approval": "RERA Approved",
+      "reraNumber": "",
+      "featured": false,
+      "location": {
+        "area": "Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "",
+        "latitude": 0,
+        "longitude": 0
+      },
+      "price": {
+        "startingPrice": 0,
+        "priceText": "On Request",
+        "pricePerSqft": 0
+      },
+      "bhk": ["2 BHK", "3 BHK"],
+      "sizes": [],
+      "projectDetails": {
+        "landArea": "",
+        "towers": 0,
+        "floors": "",
+        "totalUnits": 0,
+        "clubhouse": "",
+        "possession": ""
+      },
+      "propertyType": "Apartment",
+      "amenities": [],
+      "connectivity": [],
+      "highlights": ["Under Construction"],
+      "seo": {"title": "", "keywords": []},
+      "media": {"thumbnail": "/assets/default-img/high-raise.png", "banner": "/assets/default-img/high-raise.png"},
+      "contact": {
+        "phone": "+91 93919 54743",
+        "whatsapp": "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20The%20Prestige%20City%20Hyderabad"
       }
     }
   ]
