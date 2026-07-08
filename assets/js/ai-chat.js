@@ -87,7 +87,8 @@ function score(p,parsed){
 }
 
 // Inject chat widget HTML
-var chatHTML='<div id="aiChatWidget" class="ai-chat-widget open">'+
+var isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
+var chatHTML='<div id="aiChatWidget" class="ai-chat-widget '+(isHome?'open':'minimized')+'">'+
 '<div class="ai-chat-bubble" id="aiChatBubble"><span class="ai-chat-bubble-icon">\ud83e\udd16</span><span class="ai-chat-bubble-text">AI Property Finder</span></div>'+
 '<div class="ai-chat-window" id="aiChatWindow">'+
 '<div class="ai-chat-header"><span>\ud83e\udd16 AI Property Finder</span><button id="aiChatMin" class="ai-chat-min">&minus;</button></div>'+

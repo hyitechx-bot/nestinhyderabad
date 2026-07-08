@@ -193,6 +193,7 @@ document.getElementById('lightbox').addEventListener('click',function(e){ if(e.t
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeLightbox(); if(e.key==='ArrowLeft') changeLightbox(-1); if(e.key==='ArrowRight') changeLightbox(1); });
 window.addEventListener('scroll',()=>{ const h=document.getElementById('header'); if(h) h.style.boxShadow=window.scrollY>50?'0 2px 20px rgba(0,0,0,0.4)':'none'; });
 </script>
+<script src="../assets/js/ai-chat.js"></script>
 </body>
 </html>
 
