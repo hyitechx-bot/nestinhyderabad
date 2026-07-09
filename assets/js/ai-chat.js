@@ -2,7 +2,7 @@
 (function(){
 // Project database
 var DB=[
-{id:"eternia",name:"Candeur Eternia",area:"Bachupally",price:12000000,maxPrice:18000000,bhk:[2,2.5,3],status:"under construction",slug:"candeur-eternia-bachupally.html",tags:["orr","gated community","clubhouse","pool","theatre","restaurant","bachupally","miyapur extension"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Eternia"},
+{id:"eternia",name:"Candeur Eternia",area:"Bachupally",price:12000000,maxPrice:18000000,bhk:[2,2.5,3],status:"under construction",slug:"candeur-eternia-bachupally.html",tags:["orr","gated community","clubhouse","pool","theatre","restaurant","bachupally","miyapur extension","myron mall"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Eternia"},
 {id:"kukatpally",name:"Candeur Kukatpally IDL Lake",area:"Kukatpally",price:0,maxPrice:0,bhk:[2.5,3],status:"pre launch",slug:"candeur-kukatpally/",tags:["idl lake","kukatpally","kphb","metro","pre-launch","eoi","clubhouse","20 acres"],priceText:"Pre-Launch (EOI Open)",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Kukatpally"},
 {id:"skyline",name:"Candeur Skyline",area:"Financial District",price:90000000,maxPrice:200000000,bhk:[4],status:"under construction",slug:"candeur-skyline/",tags:["ultra luxury","sky villa","financial district","gachibowli","nanakramguda","premium","exclusive"],priceText:"\u20B99 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Skyline"},
 {id:"lakescape",name:"Candeur Lakescape",area:"Kondapur",price:9000000,maxPrice:22000000,bhk:[2,2.5,3,3.5],status:"under construction",slug:"candeur-lakescape/",tags:["lake view","kondapur","hitech city","madhapur","it hub"],priceText:"\u20B990L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Lakescape"},
@@ -88,7 +88,9 @@ function score(p,parsed){
 
 // Inject chat widget HTML
 var isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
-var chatHTML='<div id="aiChatWidget" class="ai-chat-widget '+(isHome?'open':'minimized')+'">'+
+var isMobile = window.innerWidth <= 768;
+var startState = (isHome && !isMobile) ? 'open' : 'minimized';
+var chatHTML='<div id="aiChatWidget" class="ai-chat-widget '+startState+'">'+
 '<div class="ai-chat-bubble" id="aiChatBubble"><span class="ai-chat-bubble-icon">\ud83e\udd16</span><span class="ai-chat-bubble-text">AI Property Finder</span></div>'+
 '<div class="ai-chat-window" id="aiChatWindow">'+
 '<div class="ai-chat-header"><span>\ud83e\udd16 AI Property Finder</span><button id="aiChatMin" class="ai-chat-min">&minus;</button></div>'+
@@ -152,7 +154,7 @@ chatCSS.textContent=`
 .ai-typing span:nth-child(2){animation-delay:0.2s}
 .ai-typing span:nth-child(3){animation-delay:0.4s}
 @keyframes blink{0%,80%,100%{opacity:0.3}40%{opacity:1}}
-@media(max-width:480px){.ai-chat-window{width:calc(100vw - 20px);height:60vh;border-radius:12px}.ai-chat-widget{right:10px;bottom:80px}.ai-chat-bubble-text{display:none}.ai-chat-bubble{padding:14px;border-radius:50%}}
+@media(max-width:480px){.ai-chat-window{width:calc(100vw - 20px);height:60vh;border-radius:12px}.ai-chat-widget{right:10px;bottom:75px}.ai-chat-bubble-text{display:none}.ai-chat-bubble{padding:12px;border-radius:50%}.ai-chat-bubble-icon{font-size:1.1rem}}
 `;
 document.head.appendChild(chatCSS);
 
@@ -244,4 +246,15 @@ document.addEventListener('click',function(e){
     processQuery(e.target.textContent);
   }
 });
+
+// Auto-open on mobile homepage after 30 seconds
+if (isMobile && isHome) {
+  setTimeout(function(){
+    var widget = document.getElementById('aiChatWidget');
+    if (widget && widget.classList.contains('minimized')) {
+      widget.classList.remove('minimized');
+      widget.classList.add('open');
+    }
+  }, 30000);
+}
 })();

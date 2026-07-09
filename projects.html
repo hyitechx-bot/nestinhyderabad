@@ -142,11 +142,13 @@ fetch('data/projects.json')
   .then(function(r){return r.json();})
   .then(function(data){
     projects=data.projects.map(function(p){
-      return {id:p.id,slug:p.slug||"",name:p.projectName,builder:p.builder,status:p.status,bhk:p.bhk,area:p.location.area,city:p.location.city,price:p.price.startingPrice,priceText:p.price.priceText,land:p.projectDetails.landArea||"",rera:p.reraNumber||"",featured:p.featured,img:p.media.thumbnail.replace(/^\//,''),wa:p.contact.whatsapp};
-    });
+      try {
+        return {id:p.id||"",slug:p.slug||"",name:p.projectName||"Unknown",builder:p.builder||"",status:p.status||"Under Construction",bhk:p.bhk||[],area:(p.location&&p.location.area)||"Hyderabad",city:(p.location&&p.location.city)||"Hyderabad",price:(p.price&&p.price.startingPrice)||0,priceText:(p.price&&p.price.priceText)||"On Request",land:(p.projectDetails&&p.projectDetails.landArea)||"",rera:p.reraNumber||"",featured:p.featured||false,img:((p.media&&p.media.thumbnail)||"assets/default-img/high-raise.png").replace(/^\//,''),wa:(p.contact&&p.contact.whatsapp)||"https://wa.me/919391954743"};
+      } catch(e){ return null; }
+    }).filter(function(p){return p!==null;});
     render(projects);
   })
-  .catch(function(e){console.error('JSON load failed',e);});
+  .catch(function(e){console.error('JSON load failed',e);grid.innerHTML='<div class="no-results">Failed to load projects. Please refresh.</div>';});
 
 function render(list){
   if(!list.length){grid.innerHTML='<div class="no-results">No projects match. Try different filters.</div>';return;}
