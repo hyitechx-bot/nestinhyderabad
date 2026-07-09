@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Test JSON Fetch</title>
+<style>
+body{font-family:sans-serif;padding:40px;max-width:800px;margin:0 auto}
+h1{font-size:1.4rem}
+.status{padding:12px 16px;border-radius:8px;margin:10px 0;font-size:0.9rem}
+.success{background:#f0fdf4;border:1px solid #86efac;color:#166534}
+.fail{background:#fef2f2;border:1px solid #fca5a5;color:#991b1b}
+.info{background:#f0f9ff;border:1px solid #93c5fd;color:#1e40af}
+pre{background:#f5f5f5;padding:12px;border-radius:8px;overflow-x:auto;font-size:0.8rem;max-height:300px;overflow-y:auto}
+</style>
+</head>
+<body>
+<h1>🧪 JSON Fetch Test Page</h1>
+<p>Testing whether <code>data/projects.json</code> and <code>data/classifieds.json</code> can be fetched on GitHub Pages.</p>
+
+<h2>Test 1: Fetch <code>data/projects.json</code> (relative path)</h2>
+<div id="test1" class="status info">Testing...</div>
+
+<h2>Test 2: Fetch <code>/data/projects.json</code> (absolute path)</h2>
+<div id="test2" class="status info">Testing...</div>
+
+<h2>Test 3: Fetch <code>data/classifieds.json</code> (relative path)</h2>
+<div id="test3" class="status info">Testing...</div>
+
+<h2>Test 4: Fetch <code>/data/classifieds.json</code> (absolute path)</h2>
+<div id="test4" class="status info">Testing...</div>
+
+<h2>Results Summary</h2>
+<div id="summary" class="status info">Running tests...</div>
+
+<h2>Data Preview (if loaded)</h2>
+<pre id="preview">Loading...</pre>
+
+<script>
+var results = {};
+
+function test(id, url) {
+  var el = document.getElementById(id);
+  fetch(url)
+    .then(function(r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function(data) {
+      var count = data.projects ? data.projects.length : (data.classifieds ? data.classifieds.length : 0);
+      el.className = 'status success';
+      el.innerHTML = '✅ SUCCESS — Loaded ' + count + ' items from <code>' + url + '</code>';
+      results[id] = true;
+      if (id === 'test1' || id === 'test2') {
+        document.getElementById('preview').textContent = 'Projects loaded: ' + count + '\nFirst project: ' + JSON.stringify(data.projects[0].projectName) + '\nLast project: ' + JSON.stringify(data.projects[data.projects.length-1].projectName);
+      }
+      updateSummary();
+    })
+    .catch(function(err) {
+      el.className = 'status fail';
+      el.innerHTML = '❌ FAILED — <code>' + url + '</code> — Error: ' + err.message;
+      results[id] = false;
+      updateSummary();
+    });
+}
+
+function updateSummary() {
+  var keys = Object.keys(results);
+  if (keys.length < 4) return;
+  var el = document.getElementById('summary');
+  var anyPass = keys.some(function(k) { return results[k]; });
+  if (anyPass) {
+    var working = keys.filter(function(k) { return results[k]; }).map(function(k) { return k; });
+    el.className = 'status success';
+    el.innerHTML = '✅ JSON fetch WORKS on your hosting! Working paths: ' + working.join(', ') + '<br><br><strong>Recommendation:</strong> You can safely switch to JSON-based loading. Use the path that worked (relative or absolute).';
+  } else {
+    el.className = 'status fail';
+    el.innerHTML = '❌ JSON fetch does NOT work on your hosting.<br><br><strong>Recommendation:</strong> Keep the current inline data approach. GitHub Pages may not be serving the /data/ folder correctly, or CORS is blocking it.';
+  }
+}
+
+// Run tests
+test('test1', 'data/projects.json');
+test('test2', '/data/projects.json');
+test('test3', 'data/classifieds.json');
+test('test4', '/data/classifieds.json');
+</script>
+</body>
+</html>
