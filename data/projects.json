@@ -1,7 +1,7 @@
 ﻿{
     "lastUpdated":  "2026-07-07",
     "version":  "1.0",
-    "totalProjects":  35,
+    "totalProjects":  36,
     "projects":  [
                      {
                          "id":  "candeur-eternia",
@@ -134,9 +134,9 @@
                                           "longitude":  78.3996
                                       },
                          "price":  {
-                                       "startingPrice":  0,
-                                       "priceText":  "Pre-Launch Pricing",
-                                       "pricePerSqft":  0
+                                       "startingPrice":  8900000,
+                                       "priceText":  "u{20B9}89L onwards (2.5 BHK)",
+                                       "pricePerSqft":  5700
                                    },
                          "bhk":  [
                                      "2.5 BHK",
@@ -2584,7 +2584,117 @@
                                          "phone":  "+91 93919 54743",
                                          "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20The%20Prestige%20City%20Hyderabad"
                                      }
+                     },
+                     {
+                         "id":  "crisanto",
+                         "slug":  "crisanto/",
+                         "projectName":  "Crisanto",
+                         "builder":  "Avanthika Constructions",
+                         "status":  "New Launch",
+                         "approval":  "HMDA Approved",
+                         "reraNumber":  "",
+                         "featured":  true,
+                         "location":  {
+                                          "area":  "Ameenpur",
+                                          "city":  "Hyderabad",
+                                          "state":  "Telangana",
+                                          "pincode":  "",
+                                          "latitude":  17.51,
+                                          "longitude":  78.31
+                                      },
+                         "price":  {
+                                       "startingPrice":  0,
+                                       "priceText":  "On Request",
+                                       "pricePerSqft":  0
+                                   },
+                         "bhk":  [
+                                     "2 BHK",
+                                     "2.5 BHK",
+                                     "3 BHK",
+                                     "4 BHK"
+                                 ],
+                         "sizes":  [
+                                       {
+                                           "bhk":  "2 BHK",
+                                           "from":  1355,
+                                           "to":  1500
+                                       },
+                                       {
+                                           "bhk":  "3 BHK",
+                                           "from":  1800,
+                                           "to":  2500
+                                       },
+                                       {
+                                           "bhk":  "4 BHK",
+                                           "from":  2800,
+                                           "to":  3475
+                                       }
+                                   ],
+                         "projectDetails":  {
+                                                "landArea":  "24.5 Acres",
+                                                "towers":  7,
+                                                "floors":  "39",
+                                                "totalUnits":  0,
+                                                "clubhouse":  "1,00,000 Sq.Ft (2 Clubhouses)",
+                                                "possession":  ""
+                                            },
+                         "propertyType":  "Apartment",
+                         "amenities":  [
+                                           "Infinity Pool",
+                                           "Gymnasium",
+                                           "Tennis Courts",
+                                           "Basketball Courts",
+                                           "Cricket Nets",
+                                           "Yoga Hall",
+                                           "Amphitheatre",
+                                           "Food Court",
+                                           "Supermarket",
+                                           "Creche",
+                                           "Health Centre",
+                                           "Jogging Tracks"
+                                       ],
+                         "connectivity":  [
+                                              {
+                                                  "place":  "BHEL Metro (Upcoming)",
+                                                  "distance":  "2 mins"
+                                              },
+                                              {
+                                                  "place":  "Lingampally Railway",
+                                                  "distance":  "10 mins"
+                                              },
+                                              {
+                                                  "place":  "Hitech City",
+                                                  "distance":  "20 mins"
+                                              },
+                                              {
+                                                  "place":  "Gachibowli",
+                                                  "distance":  "25 mins"
+                                              }
+                                          ],
+                         "highlights":  [
+                                            "24.5 Acres",
+                                            "7 Towers 39 Floors",
+                                            "1,25,000 Sq.Ft Sports Arena",
+                                            "HMDA Approved",
+                                            "100% Vaastu",
+                                            "2 Min to BHEL Metro"
+                                        ],
+                         "seo":  {
+                                     "title":  "Crisanto Ameenpur Chandanagar Hyderabad",
+                                     "keywords":  [
+                                                      "Crisanto",
+                                                      "Avanthika Constructions",
+                                                      "luxury apartments Ameenpur"
+                                                  ]
+                                 },
+                         "media":  {
+                                       "thumbnail":  "/assets/default-img/high-raise.png",
+                                       "banner":  "/assets/default-img/high-raise.png"
+                                   },
+                         "contact":  {
+                                         "phone":  "+91 93919 54743",
+                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Crisanto%20Ameenpur."
+                                     }
                      }
                  ]
 }
-
