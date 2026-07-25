@@ -38,10 +38,11 @@ var DB=[
 {id:"urbanrise-cloud-33",name:"Urbanrise On Cloud 33",area:"Hyderabad",price:0,maxPrice:0,bhk:[2,3],status:"under construction",slug:"",tags:["urbanrise","hyderabad"],priceText:"On Request",wa:"https://wa.me/919391954743?text=Hi%2C%20interested%20in%20Urbanrise%20On%20Cloud%2033"},
 {id:"prestige-city-hyd",name:"The Prestige City Hyderabad",area:"Hyderabad",price:0,maxPrice:0,bhk:[2,3],status:"under construction",slug:"",tags:["prestige","hyderabad"],priceText:"On Request",wa:"https://wa.me/919391954743?text=Hi%2C%20interested%20in%20The%20Prestige%20City%20Hyderabad"},
 {id:"crisanto",name:"Crisanto",area:"Ameenpur",price:0,maxPrice:0,bhk:[2,2.5,3,4],status:"new launch",slug:"crisanto/",tags:["ameenpur","chandanagar","avanthika","hmda","ultra luxury","metro","vaastu","sports arena","24 acres"],priceText:"On Request",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Crisanto%20Ameenpur"},
-{id:"marvel-miyapur",name:"Marvel of Miyapur 3.0",area:"Miyapur",price:9656000,maxPrice:13300000,bhk:[3],status:"new launch",slug:"marvel-of-miyapur/",tags:["miyapur","metro","corner home","d-mart","ghmc","affordable","orr","3 bhk only"],priceText:"\u20B95,199/sq.ft onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Marvel%20of%20Miyapur%203.0"}
+{id:"marvel-miyapur",name:"New Launch in Miyapur",area:"Miyapur",price:9656000,maxPrice:13300000,bhk:[3],status:"new launch",slug:"marvel-of-miyapur/",tags:["miyapur","metro","corner home","d-mart","ghmc","affordable","orr","3 bhk only"],priceText:"\u20B95,199/sq.ft onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Marvel%20of%20Miyapur%203.0"},
+{id:"new-launch-kollur",name:"New Launch in Kollur",area:"Kollur",price:16400000,maxPrice:16400000,bhk:[3],status:"new launch",slug:"new-launch-kollur/",tags:["kollur","tellapur","orr","financial district","kokapet","gachibowli","narsingi","high-rise","construction linked","time linked","mortgage","all inclusive","east facing","270 view"],priceText:"\u20B96,999/sq.ft (2,340 Sq.Ft)",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20New%20Launch%20in%20Kollur"}
 ];
 
-var LOC_MAP={"hitech city":["kondapur","kukatpally","madhapur","gachibowli"],"hitec city":["kondapur","kukatpally","madhapur","gachibowli"],"it hub":["kondapur","kukatpally","madhapur","gachibowli","financial district"],"orr":["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet"],"metro":["miyapur","kukatpally"],"financial district":["financial district","kokapet","gachibowli"]};
+var LOC_MAP={"hitech city":["kondapur","kukatpally","madhapur","gachibowli"],"hitec city":["kondapur","kukatpally","madhapur","gachibowli"],"it hub":["kondapur","kukatpally","madhapur","gachibowli","financial district"],"orr":["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet","kollur"],"metro":["miyapur","kukatpally"],"financial district":["financial district","kokapet","gachibowli","kollur"]};
 
 function parseQuery(q){
   q=q.toLowerCase().trim();
@@ -51,7 +52,7 @@ function parseQuery(q){
   if(crM)r.maxBudget=parseFloat(crM[1])*10000000;
   else if(lM)r.maxBudget=parseInt(lM[1])*100000;
   if(!r.maxBudget){var uM=q.match(/under\s*[^0-9]*(\d+\.?\d*)\s*(cr|l)/i);if(uM)r.maxBudget=uM[2]==='cr'?parseFloat(uM[1])*10000000:parseFloat(uM[1])*100000;}
-  var areas=["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet","financial district","narapally","uppal","varthur","madhapur","kphb","tellapur","nallagandla","puppalaguda","nanakramguda","raidurgam","manchirevula","isnapur","patancheru","pocharam","gaganpahad"];
+  var areas=["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet","kollur","financial district","narapally","uppal","varthur","madhapur","kphb","tellapur","nallagandla","puppalaguda","nanakramguda","raidurgam","manchirevula","isnapur","patancheru","pocharam","gaganpahad","ameenpur"];
   areas.forEach(function(a){if(q.indexOf(a)>-1)r.locations.push(a);});
   Object.keys(LOC_MAP).forEach(function(s){if(q.indexOf(s)>-1)r.locations=r.locations.concat(LOC_MAP[s]);});
   r.locations=[...new Set(r.locations)];

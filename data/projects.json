@@ -1,7 +1,7 @@
 ﻿{
     "lastUpdated":  "2026-07-07",
     "version":  "1.0",
-    "totalProjects":  37,
+    "totalProjects":  38,
     "projects":  [
                      {
                          "id":  "candeur-eternia",
@@ -2710,7 +2710,7 @@
                      {
                          "id":  "marvel-of-miyapur",
                          "slug":  "marvel-of-miyapur/",
-                         "projectName":  "Marvel of Miyapur 3.0",
+                         "projectName":  "New Launch in Miyapur",
                          "builder":  "Marvel Group",
                          "status":  "New Launch",
                          "approval":  "GHMC Approved",
@@ -2785,7 +2785,7 @@
                                             "Opposite D-Mart"
                                         ],
                          "seo":  {
-                                     "title":  "Marvel of Miyapur 3.0",
+                                     "title":  "New Launch in Miyapur",
                                      "keywords":  [
                                                       "Marvel of Miyapur",
                                                       "3 BHK Miyapur",
@@ -2800,6 +2800,110 @@
                                          "phone":  "+91 93919 54743",
                                          "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Marvel%20of%20Miyapur%203.0."
                                      }
+                     },
+                     {
+                         "id":  "new-launch-kollur",
+                         "slug":  "new-launch-kollur/",
+                         "projectName":  "New Launch in Kollur",
+                         "builder":  "Contact for Details",
+                         "status":  "New Launch",
+                         "approval":  "Approved",
+                         "reraNumber":  "",
+                         "featured":  false,
+                         "location":  {
+                                          "area":  "Kollur",
+                                          "city":  "Hyderabad",
+                                          "state":  "Telangana",
+                                          "pincode":  "500075",
+                                          "latitude":  17.3900,
+                                          "longitude":  78.3300,
+                                          "subArea": "Tellapur"
+                                      },
+                         "price":  {
+                                       "startingPrice":  16400000,
+                                       "priceText":  "₹6,999/sq.ft All-Inclusive (~₹1.64 Cr)",
+                                       "pricePerSqft":  6999
+                                   },
+                         "bhk":  [
+                                     "3 BHK"
+                                 ],
+                         "sizes":  [
+                                       {
+                                           "bhk":  "3 BHK",
+                                           "from":  2340,
+                                           "to":  2340
+                                       }
+                                   ],
+                         "projectDetails":  {
+                                                "landArea":  "",
+                                                "towers":  0,
+                                                "floors":  "High-Rise",
+                                                "totalUnits":  0,
+                                                "clubhouse":  "",
+                                                "possession":  "Contact for Details"
+                                            },
+                         "propertyType":  "Apartment",
+                         "amenities":  [
+                                           "Swimming Pool",
+                                           "Gymnasium",
+                                           "Clubhouse",
+                                           "Landscaped Gardens",
+                                           "Children's Play Area",
+                                           "Car Parking",
+                                           "24/7 Security",
+                                           "Power Backup"
+                                       ],
+                         "connectivity":  [
+                                              {
+                                                  "place":  "ORR",
+                                                  "distance":  "3 mins"
+                                              },
+                                              {
+                                                  "place":  "Financial District",
+                                                  "distance":  "10 mins"
+                                              },
+                                              {
+                                                  "place":  "Gachibowli",
+                                                  "distance":  "12 mins"
+                                              },
+                                              {
+                                                  "place":  "Kokapet",
+                                                  "distance":  "5 mins"
+                                              },
+                                              {
+                                                  "place":  "Hitech City",
+                                                  "distance":  "20 mins"
+                                              }
+                                          ],
+                         "highlights":  [
+                                            "3 BHK – 2,340 Sq.Ft",
+                                            "₹6,999/sq.ft All-Inclusive",
+                                            "East Facing | 270° View Balcony",
+                                            "High-Rise Landmark",
+                                            "Construction-Linked Plan (20%+80%)",
+                                            "Time-Linked Plan (10%+40%+50%)",
+                                            "Mortgage Units (Floors 1-3)",
+                                            "Near ORR & Financial District"
+                                        ],
+                         "seo":  {
+                                     "title":  "New Launch in Kollur 2026 – 3 BHK 2,340 Sq.Ft ₹6,999/sq.ft",
+                                     "keywords":  [
+                                                      "new launch Kollur",
+                                                      "3 BHK Kollur Tellapur",
+                                                      "apartments Kollur Hyderabad",
+                                                      "flats near ORR",
+                                                      "high-rise Kollur"
+                                                  ]
+                                 },
+                         "media":  {
+                                       "thumbnail":  "/assets/default-img/high-raise.png",
+                                       "banner":  "/assets/default-img/high-raise.png"
+                                   },
+                         "contact":  {
+                                         "phone":  "+91 93919 54743",
+                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%27m%20interested%20in%20the%20new%20launch%20in%20Kollur.%20Please%20share%20project%20details."
+                                     }
                      }
                  ]
 }
+
