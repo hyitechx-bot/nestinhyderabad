@@ -1,7 +1,7 @@
 ﻿{
     "lastUpdated":  "2026-07-07",
     "version":  "1.0",
-    "totalProjects":  36,
+    "totalProjects":  37,
     "projects":  [
                      {
                          "id":  "candeur-eternia",
@@ -140,17 +140,28 @@
                                    },
                          "bhk":  [
                                      "2.5 BHK",
-                                     "3 BHK"
+                                     "3 BHK",
+                                     "3.5 BHK"
                                  ],
                          "sizes":  [
                                        {
                                            "bhk":  "2.5 BHK",
                                            "from":  1552,
-                                           "to":  1650
+                                           "to":  1568
                                        },
                                        {
                                            "bhk":  "3 BHK",
-                                           "from":  1700,
+                                           "from":  1800,
+                                           "to":  1880
+                                       },
+                                       {
+                                           "bhk":  "3.5 BHK",
+                                           "from":  2150,
+                                           "to":  2150
+                                       },
+                                       {
+                                           "bhk":  "3 BHK Large",
+                                           "from":  2207,
                                            "to":  2207
                                        }
                                    ],
@@ -2694,6 +2705,100 @@
                          "contact":  {
                                          "phone":  "+91 93919 54743",
                                          "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Crisanto%20Ameenpur."
+                                     }
+                     },
+                     {
+                         "id":  "marvel-of-miyapur",
+                         "slug":  "marvel-of-miyapur/",
+                         "projectName":  "Marvel of Miyapur 3.0",
+                         "builder":  "Marvel Group",
+                         "status":  "New Launch",
+                         "approval":  "GHMC Approved",
+                         "reraNumber":  "",
+                         "featured":  true,
+                         "location":  {
+                                          "area":  "Miyapur",
+                                          "city":  "Hyderabad",
+                                          "state":  "Telangana",
+                                          "pincode":  "500049",
+                                          "latitude":  17.4967,
+                                          "longitude":  78.3547
+                                      },
+                         "price":  {
+                                       "startingPrice":  9656000,
+                                       "priceText":  "₹5,199/sq.ft onwards",
+                                       "pricePerSqft":  5199
+                                   },
+                         "bhk":  [
+                                     "3 BHK"
+                                 ],
+                         "sizes":  [
+                                       {
+                                           "bhk":  "3 BHK",
+                                           "from":  1860,
+                                           "to":  2560
+                                       }
+                                   ],
+                         "projectDetails":  {
+                                                "landArea":  "~9 Acres",
+                                                "towers":  0,
+                                                "floors":  "10",
+                                                "totalUnits":  0,
+                                                "clubhouse":  "",
+                                                "possession":  ""
+                                            },
+                         "propertyType":  "Apartment",
+                         "amenities":  [
+                                           "Corner Homes",
+                                           "Swimming Pool",
+                                           "Gymnasium",
+                                           "Landscaped Gardens",
+                                           "Clubhouse",
+                                           "Children\u0027s Play Area",
+                                           "24/7 Security",
+                                           "Covered Parking"
+                                       ],
+                         "connectivity":  [
+                                              {
+                                                  "place":  "D-Mart",
+                                                  "distance":  "Opposite"
+                                              },
+                                              {
+                                                  "place":  "Miyapur Metro",
+                                                  "distance":  "5 mins"
+                                              },
+                                              {
+                                                  "place":  "ORR",
+                                                  "distance":  "5 mins"
+                                              },
+                                              {
+                                                  "place":  "Hitech City",
+                                                  "distance":  "18 mins"
+                                              }
+                                          ],
+                         "highlights":  [
+                                            "Every Home a Corner Home",
+                                            "30ft Gap Between Flats",
+                                            "~9 Acres",
+                                            "GHMC Approved",
+                                            "₹5,199/sq.ft",
+                                            "Opposite D-Mart"
+                                        ],
+                         "seo":  {
+                                     "title":  "Marvel of Miyapur 3.0",
+                                     "keywords":  [
+                                                      "Marvel of Miyapur",
+                                                      "3 BHK Miyapur",
+                                                      "corner homes Miyapur"
+                                                  ]
+                                 },
+                         "media":  {
+                                       "thumbnail":  "/assets/marvel_of_miyapur/project1.jpg",
+                                       "banner":  "/assets/marvel_of_miyapur/project1.jpg"
+                                   },
+                         "contact":  {
+                                         "phone":  "+91 93919 54743",
+                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Marvel%20of%20Miyapur%203.0."
                                      }
                      }
                  ]
