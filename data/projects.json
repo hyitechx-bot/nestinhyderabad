@@ -1,4 +1,4 @@
-﻿{
+{
     "lastUpdated":  "2026-07-07",
     "version":  "1.0",
     "totalProjects":  38,
@@ -22,7 +22,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  12000000,
-                                       "priceText":  "â‚¹1.2 Cr onwards",
+                                       "priceText":  "₹1.2 Cr onwards",
                                        "pricePerSqft":  7200
                                    },
                          "bhk":  [
@@ -96,7 +96,7 @@
                                             "68,000+ Sq.Ft Amenities",
                                             "5 Mins to ORR",
                                             "Two Grand Clubhouses",
-                                            "Myron Mall – (Upcoming)"
+                                            "Myron Mall � (Upcoming)"
                                         ],
                          "seo":  {
                                      "title":  "Candeur Eternia Bachupally Hyderabad",
@@ -250,7 +250,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  90000000,
-                                       "priceText":  "â‚¹9 Cr onwards",
+                                       "priceText":  "₹9 Cr onwards",
                                        "pricePerSqft":  14000
                                    },
                          "bhk":  [
@@ -343,7 +343,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  9000000,
-                                       "priceText":  "â‚¹90L onwards",
+                                       "priceText":  "₹90L onwards",
                                        "pricePerSqft":  7000
                                    },
                          "bhk":  [
@@ -448,7 +448,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  10000000,
-                                       "priceText":  "â‚¹1 Cr onwards",
+                                       "priceText":  "₹1 Cr onwards",
                                        "pricePerSqft":  7500
                                    },
                          "bhk":  [
@@ -546,7 +546,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  12000000,
-                                       "priceText":  "â‚¹1.2 Cr onwards",
+                                       "priceText":  "₹1.2 Cr onwards",
                                        "pricePerSqft":  7500
                                    },
                          "bhk":  [
@@ -638,7 +638,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  7000000,
-                                       "priceText":  "â‚¹70L onwards",
+                                       "priceText":  "₹70L onwards",
                                        "pricePerSqft":  6100
                                    },
                          "bhk":  [
@@ -742,7 +742,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  8000000,
-                                       "priceText":  "â‚¹80L onwards",
+                                       "priceText":  "₹80L onwards",
                                        "pricePerSqft":  0
                                    },
                          "bhk":  [
@@ -936,7 +936,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  45000000,
-                                       "priceText":  "â‚¹4.5 Cr onwards",
+                                       "priceText":  "₹4.5 Cr onwards",
                                        "pricePerSqft":  14500
                                    },
                          "bhk":  [
@@ -2708,8 +2708,8 @@
                                      }
                      },
                      {
-                         "id":  "marvel-of-miyapur",
-                         "slug":  "marvel-of-miyapur/",
+                         "id":  "new-launch-miyapur",
+                         "slug":  "new-launch-miyapur/",
                          "projectName":  "New Launch in Miyapur",
                          "builder":  "Marvel Group",
                          "status":  "New Launch",
@@ -2726,7 +2726,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  9656000,
-                                       "priceText":  "₹5,199/sq.ft onwards",
+                                       "priceText":  "?5,199/sq.ft onwards",
                                        "pricePerSqft":  5199
                                    },
                          "bhk":  [
@@ -2781,13 +2781,13 @@
                                             "30ft Gap Between Flats",
                                             "~9 Acres",
                                             "GHMC Approved",
-                                            "₹5,199/sq.ft",
+                                            "?5,199/sq.ft",
                                             "Opposite D-Mart"
                                         ],
                          "seo":  {
                                      "title":  "New Launch in Miyapur",
                                      "keywords":  [
-                                                      "Marvel of Miyapur",
+                                                      "New Launch Miyapur",
                                                       "3 BHK Miyapur",
                                                       "corner homes Miyapur"
                                                   ]
@@ -2821,7 +2821,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  16400000,
-                                       "priceText":  "₹6,999/sq.ft All-Inclusive (~₹1.64 Cr)",
+                                       "priceText":  "?6,999/sq.ft All-Inclusive (~?1.64 Cr)",
                                        "pricePerSqft":  6999
                                    },
                          "bhk":  [
@@ -2876,9 +2876,9 @@
                                               }
                                           ],
                          "highlights":  [
-                                            "3 BHK – 2,340 Sq.Ft",
-                                            "₹6,999/sq.ft All-Inclusive",
-                                            "East Facing | 270° View Balcony",
+                                            "3 BHK � 2,340 Sq.Ft",
+                                            "?6,999/sq.ft All-Inclusive",
+                                            "East Facing | 270� View Balcony",
                                             "High-Rise Landmark",
                                             "Construction-Linked Plan (20%+80%)",
                                             "Time-Linked Plan (10%+40%+50%)",
@@ -2886,7 +2886,7 @@
                                             "Near ORR & Financial District"
                                         ],
                          "seo":  {
-                                     "title":  "New Launch in Kollur 2026 – 3 BHK 2,340 Sq.Ft ₹6,999/sq.ft",
+                                     "title":  "New Launch in Kollur 2026 � 3 BHK 2,340 Sq.Ft ?6,999/sq.ft",
                                      "keywords":  [
                                                       "new launch Kollur",
                                                       "3 BHK Kollur Tellapur",

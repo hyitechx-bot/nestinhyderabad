@@ -519,17 +519,17 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.nestinhyderabad.com/marvel-of-miyapur/</loc>
+    <loc>https://www.nestinhyderabad.com/new-launch-miyapur/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.nestinhyderabad.com/blog/marvel-of-miyapur-3-corner-homes-2026.html</loc>
+    <loc>https://www.nestinhyderabad.com/blog/new-launch-miyapur-3-corner-homes-2026.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://www.nestinhyderabad.com/marvel-of-miyapur/marvel-of-miyapur-price.html</loc>
+    <loc>https://www.nestinhyderabad.com/new-launch-miyapur/new-launch-miyapur-price.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -538,6 +538,18 @@
     <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.nestinhyderabad.com/new-launch-kollur/premium-highrise-kollur.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.nestinhyderabad.com/new-launch-kollur/new-launch-kollur-elevated.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.nestinhyderabad.com/blog/new-launch-kollur-apartments-near-orr-2026.html</loc>
