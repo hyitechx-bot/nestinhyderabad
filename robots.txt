@@ -1,10 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /assets/js/
-Disallow: /assets/css/
 
-# Image crawlers welcome
-User-agent: Googlebot-Image
-Allow: /
-
+# Sitemap
 Sitemap: https://www.nestinhyderabad.com/sitemap.xml
