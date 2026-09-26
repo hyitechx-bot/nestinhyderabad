@@ -1500,3 +1500,91 @@ ul { list-style: none; }
   .social-share { gap: 8px; }
   .share-btn { padding: 7px 10px; font-size: 0.72rem; }
 }
+
+/* ═══════════════════════════════════════
+   Lead Capture Form (reusable component)
+═══════════════════════════════════════ */
+.lead-form-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 560px;
+  margin: 40px auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+.lead-form-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 6px;
+  color: #0a0a0a;
+}
+.lead-form-card p.lead-form-sub {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+.lead-form .lead-field { margin-bottom: 14px; }
+.lead-form label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+.lead-form input,
+.lead-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s;
+}
+.lead-form input:focus,
+.lead-form select:focus {
+  outline: none;
+  border-color: #E8B84B;
+  background: #fff;
+}
+.lead-form .lead-row {
+  display: flex;
+  gap: 12px;
+}
+.lead-form .lead-row .lead-field { flex: 1; }
+.lead-form button[type="submit"] {
+  width: 100%;
+  margin-top: 6px;
+  padding: 14px 20px;
+  background: #E8B84B;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.lead-form button[type="submit"]:hover { background: #d8a63c; }
+.lead-form button[type="submit"]:disabled { opacity: 0.7; cursor: default; }
+.lead-form .lead-form-status {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  min-height: 1.2em;
+  text-align: center;
+}
+.lead-form .lead-form-note {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  color: #999;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .lead-form .lead-row { flex-direction: column; gap: 0; }
+  .lead-form-card { padding: 22px; }
+}

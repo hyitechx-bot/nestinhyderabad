@@ -239,3 +239,119 @@
   gtag('js', new Date());
   gtag('config', GA_ID);
 })();
+
+/* ═══════════════════════════════════════
+   Lead Capture Form (reusable)
+   - Works on GitHub Pages (static) via Formspree AJAX POST
+   - Captures the lead even if the user never sends the WhatsApp message
+   - Fires a GA4 "generate_lead" event
+   - Then opens WhatsApp with a prefilled message
+
+   SETUP (one time):
+   1. Create a free form at https://formspree.io  -> get your form ID
+   2. Replace FORMSPREE_ID below with your ID (looks like "xdorwqkg")
+
+   USAGE on any page: add a <form class="lead-form" data-source="Kukatpally page"> ... </form>
+   with inputs named: name, phone, budget, area  (see the HTML snippet in the docs comment)
+═══════════════════════════════════════ */
+(function () {
+  var FORMSPREE_ID = 'mjgpzezo'; // Formspree form ID (same inbox as all project microsites)
+  var WHATSAPP_NUMBER = '919391954743';
+
+  var forms = document.querySelectorAll('form.lead-form');
+  if (!forms.length) return;
+
+  forms.forEach(function (form) {
+    var statusEl = form.querySelector('.lead-form-status');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var data = new FormData(form);
+      var name = (data.get('name') || '').toString().trim();
+      var phone = (data.get('phone') || '').toString().trim();
+      var budget = (data.get('budget') || '').toString().trim();
+      var area = (data.get('area') || '').toString().trim();
+      var source = form.getAttribute('data-source') || document.title;
+
+      // Basic validation
+      if (!name || !phone) {
+        if (statusEl) { statusEl.textContent = 'Please enter your name and phone number.'; statusEl.style.color = '#c0392b'; }
+        return;
+      }
+      var digits = phone.replace(/\D/g, '');
+      if (digits.length < 10) {
+        if (statusEl) { statusEl.textContent = 'Please enter a valid phone number.'; statusEl.style.color = '#c0392b'; }
+        return;
+      }
+
+      var submitBtn = form.querySelector('[type="submit"]');
+      var origText = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = 'Sending…'; }
+      if (statusEl) { statusEl.textContent = ''; }
+
+      // Add context fields Formspree will email you
+      data.append('page_source', source);
+      data.append('page_url', window.location.href);
+      data.append('_subject', 'New lead: ' + name + ' (' + (area || 'Hyderabad') + ')');
+
+      // GA4 conversion event
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          lead_source: source,
+          area: area || 'unspecified',
+          budget: budget || 'unspecified'
+        });
+      }
+
+      // Build the WhatsApp message (used after capture)
+      var msg = 'Hi, I am ' + name + '.\n';
+      msg += 'Mobile: ' + phone + '\n';
+      if (area) msg += 'Area: ' + area + '\n';
+      if (budget) msg += 'Budget: ' + budget + '\n';
+      msg += 'Enquiry from: ' + source + '\n';
+      msg += 'I found you on nestinhyderabad.com. Please share details.';
+      var waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
+
+      function finishSuccess() {
+        if (statusEl) {
+          statusEl.textContent = '✅ Thank you! Our team will contact you shortly. Opening WhatsApp…';
+          statusEl.style.color = '#2f6b34';
+        }
+        if (submitBtn) { submitBtn.innerHTML = '✅ Sent!'; }
+        form.reset();
+        // Open WhatsApp as a second touchpoint (lead already captured above)
+        window.open(waUrl, '_blank', 'noopener');
+        setTimeout(function () {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
+        }, 4000);
+      }
+
+      // If Formspree isn't configured yet, still don't lose the lead: go to WhatsApp
+      if (!FORMSPREE_ID || FORMSPREE_ID === 'YOUR_FORM_ID') {
+        finishSuccess();
+        return;
+      }
+
+      // POST the lead to Formspree (captures it even if WhatsApp is never sent)
+      fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          finishSuccess();
+        } else {
+          // Capture failed, but still route to WhatsApp so the lead isn't lost
+          if (statusEl) { statusEl.textContent = 'Opening WhatsApp to complete your enquiry…'; statusEl.style.color = '#2f6b34'; }
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
+          window.open(waUrl, '_blank', 'noopener');
+        }
+      }).catch(function () {
+        if (statusEl) { statusEl.textContent = 'Opening WhatsApp to complete your enquiry…'; statusEl.style.color = '#2f6b34'; }
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = origText; }
+        window.open(waUrl, '_blank', 'noopener');
+      });
+    });
+  });
+})();

@@ -43,22 +43,62 @@ var DB=[
 
 var LOC_MAP={"hitech city":["kondapur","kukatpally","madhapur","gachibowli"],"hitec city":["kondapur","kukatpally","madhapur","gachibowli"],"it hub":["kondapur","kukatpally","madhapur","gachibowli","financial district"],"orr":["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet","kollur"],"metro":["miyapur","kukatpally"],"financial district":["financial district","kokapet","gachibowli","kollur"]};
 
+// Convert a number + unit ("cr"/"l") to rupees
+function toRupees(num,unit){
+  var n=parseFloat(num);if(isNaN(n))return null;
+  return /^c/.test(unit)?n*10000000:n*100000;
+}
+
+// Find all "<number> cr|lakh|l" amounts in the query, in rupees
+function findAmounts(q){
+  var out=[];
+  var re=/(\d+\.?\d*)\s*(cr(?:ore)?s?|lakhs?|lacs?|l\b)/gi;
+  var m;
+  while((m=re.exec(q))!==null){
+    var val=toRupees(m[1],m[2].toLowerCase());
+    if(val!==null)out.push(val);
+  }
+  return out;
+}
+
 function parseQuery(q){
   q=q.toLowerCase().trim();
-  var r={bhk:null,maxBudget:null,locations:[],status:null,tags:[]};
-  var bhkM=q.match(/(\d\.?\d?)\s*bhk/);if(bhkM)r.bhk=parseFloat(bhkM[1]);
-  var crM=q.match(/(\d+\.?\d*)\s*cr/);var lM=q.match(/(\d+)\s*l(akh|ak)?/);
-  if(crM)r.maxBudget=parseFloat(crM[1])*10000000;
-  else if(lM)r.maxBudget=parseInt(lM[1])*100000;
-  if(!r.maxBudget){var uM=q.match(/under\s*[^0-9]*(\d+\.?\d*)\s*(cr|l)/i);if(uM)r.maxBudget=uM[2]==='cr'?parseFloat(uM[1])*10000000:parseFloat(uM[1])*100000;}
+  var r={bhk:null,minBudget:null,maxBudget:null,locations:[],status:null,tags:[]};
+
+  // ── BHK (with synonyms: "3 bhk", "3bhk", "3 bedroom", "three bhk") ──
+  var wordNum={one:1,two:2,three:3,four:4,five:5};
+  var bhkM=q.match(/(\d\.?\d?)\s*(?:bhk|bed\s*room|bedroom|bed|br)\b/);
+  if(bhkM){r.bhk=parseFloat(bhkM[1]);}
+  else{
+    Object.keys(wordNum).forEach(function(w){
+      if(!r.bhk&&new RegExp('\\b'+w+'\\s*(?:bhk|bedroom|bed)\\b').test(q))r.bhk=wordNum[w];
+    });
+  }
+
+  // ── Budget (single, range, or min) ──
+  var amounts=findAmounts(q);
+  var isMin=/(above|over|more than|minimum|min|greater than|starting)/i.test(q);
+  if(amounts.length>=2){
+    // Range: smallest = min, largest = max
+    var sorted=amounts.slice().sort(function(a,b){return a-b;});
+    r.minBudget=sorted[0];r.maxBudget=sorted[sorted.length-1];
+  } else if(amounts.length===1){
+    if(isMin){r.minBudget=amounts[0];}
+    else{r.maxBudget=amounts[0];} // "under/below/upto X" or bare amount => treat as max
+  }
+
+  // ── Locations ──
   var areas=["bachupally","miyapur","kukatpally","kondapur","gachibowli","kokapet","kollur","financial district","narapally","uppal","varthur","madhapur","kphb","tellapur","nallagandla","puppalaguda","nanakramguda","raidurgam","manchirevula","isnapur","patancheru","pocharam","gaganpahad","ameenpur"];
   areas.forEach(function(a){if(q.indexOf(a)>-1)r.locations.push(a);});
   Object.keys(LOC_MAP).forEach(function(s){if(q.indexOf(s)>-1)r.locations=r.locations.concat(LOC_MAP[s]);});
   r.locations=[...new Set(r.locations)];
-  if(q.match(/ready\s*(to)?\s*move|completed|immediate/))r.status="ready to move";
+
+  // ── Status ──
+  if(q.match(/ready\s*(to)?\s*move|completed|immediate|move\s*in/))r.status="ready to move";
   if(q.match(/pre[\s-]?launch|eoi/))r.status="pre launch";
   if(q.match(/new\s*launch/))r.status="new launch";
-  // Builder matching
+
+  // ── Builder matching ──
   var builders=["candeur","sattva","aparna","brigade","godrej","mantri","my home","phoenix","prestige","rajapushpa","ramky","urbanrise","jain"];
   builders.forEach(function(b){if(q.indexOf(b)>-1)r.tags.push(b);});
   ["luxury","ultra luxury","affordable","budget","pool","clubhouse","lake","view","green","metro","premium","compact","value"].forEach(function(f){if(q.indexOf(f)>-1)r.tags.push(f);});
@@ -69,8 +109,23 @@ function score(p,parsed){
   var s=0,reasons=[];
   if(parsed.bhk&&p.bhk.indexOf(parsed.bhk)>-1){s+=30;reasons.push(parsed.bhk+" BHK \u2713");}
   else if(parsed.bhk&&p.bhk.some(function(b){return Math.abs(b-parsed.bhk)<=0.5;})){s+=15;reasons.push("Close BHK match");}
-  if(parsed.maxBudget&&p.price>0&&p.price<=parsed.maxBudget){s+=30;reasons.push("Within budget \u2713");}
-  else if(parsed.maxBudget&&p.price>0&&p.price<=parsed.maxBudget*1.15){s+=10;reasons.push("Slightly over budget");}
+
+  // Budget scoring — supports max, min, and range. Projects with unknown price
+  // ("On Request", price 0) are not penalised: they get a small neutral score so
+  // they can still surface on BHK/area/status matches.
+  var hasBudget=parsed.maxBudget||parsed.minBudget;
+  if(hasBudget){
+    if(p.price>0){
+      var okMax=!parsed.maxBudget||p.price<=parsed.maxBudget;
+      var okMin=!parsed.minBudget||p.maxPrice>=parsed.minBudget;
+      var nearMax=parsed.maxBudget&&p.price<=parsed.maxBudget*1.15;
+      if(okMax&&okMin){s+=30;reasons.push("Within budget \u2713");}
+      else if(nearMax&&okMin){s+=10;reasons.push("Slightly over budget");}
+    } else {
+      // Unknown price: neutral, don't exclude
+      s+=8;reasons.push("Price on request");
+    }
+  }
   if(parsed.locations.length>0){
     var al=p.area.toLowerCase();
     if(parsed.locations.indexOf(al)>-1){s+=25;reasons.push(p.area+" \u2713");}
@@ -151,6 +206,14 @@ chatCSS.textContent=`
 .ai-chat-input-wrap input:focus{border-color:#E8B84B}
 .ai-chat-input-wrap button{padding:10px 16px;background:#E8B84B;color:#000;border:none;border-radius:0 8px 8px 0;font-size:1rem;cursor:pointer;font-weight:700}
 .ai-chat-input-wrap button:hover{background:#c9a030}
+.ai-lead{background:#fff;border:1.5px solid #E8B84B;border-radius:12px;padding:12px;margin-top:6px}
+.ai-lead-title{font-size:0.82rem;font-weight:700;color:#1a1a1a;margin-bottom:8px}
+.ai-lead input{width:100%;padding:9px 11px;border:1.5px solid #e8e4dc;border-radius:8px;font-size:0.85rem;font-family:inherit;outline:none;margin-bottom:8px}
+.ai-lead input:focus{border-color:#E8B84B}
+.ai-lead button{width:100%;padding:10px;background:#25d366;color:#fff;border:none;border-radius:8px;font-size:0.85rem;font-weight:700;cursor:pointer}
+.ai-lead button:hover{background:#1eb85a}
+.ai-lead button:disabled{opacity:0.6;cursor:default}
+.ai-lead-status{font-size:0.75rem;margin-top:6px;text-align:center;min-height:1em}
 .ai-typing{display:flex;gap:4px;padding:8px 14px;align-self:flex-start}
 .ai-typing span{width:8px;height:8px;background:#ccc;border-radius:50%;animation:blink 1.4s infinite}
 .ai-typing span:nth-child(2){animation-delay:0.2s}
@@ -182,10 +245,77 @@ function addTyping(){
 }
 function removeTyping(){var t=document.getElementById('typing');if(t)t.remove();}
 
+var FORMSPREE_URL='https://formspree.io/f/mjgpzezo';
+
+// Track the latest search context so the lead form can attach it
+var lastSearch={query:'',parsed:null,matches:''};
+
+function sendAiLead(name,phone,statusEl,btn){
+  var payload={
+    lead_type:'AI Property Finder',
+    name:name,
+    phone:phone,
+    search_query:lastSearch.query,
+    budget:(lastSearch.parsed&&lastSearch.parsed.maxBudget)?('Up to \u20B9'+(lastSearch.parsed.maxBudget/10000000)+' Cr'):'unspecified',
+    bhk:(lastSearch.parsed&&lastSearch.parsed.bhk)?lastSearch.parsed.bhk+' BHK':'unspecified',
+    areas:(lastSearch.parsed&&lastSearch.parsed.locations.length)?lastSearch.parsed.locations.join(', '):'unspecified',
+    matched_projects:lastSearch.matches||'none',
+    page_url:window.location.href,
+    _subject:'AI Finder lead: '+name+' — '+lastSearch.query
+  };
+
+  // GA4 conversion event
+  if(typeof window.gtag==='function'){
+    window.gtag('event','generate_lead',{lead_source:'AI Property Finder',search_query:lastSearch.query});
+  }
+
+  var wa='https://wa.me/919391954743?text='+encodeURIComponent(
+    'Hi, I am '+name+'.\nMobile: '+phone+'\nI searched: "'+lastSearch.query+'" on the AI Property Finder.\nPlease share matching options.');
+
+  if(btn){btn.disabled=true;btn.textContent='Sending\u2026';}
+
+  fetch(FORMSPREE_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
+    .then(function(res){
+      if(statusEl){statusEl.textContent='\u2705 Thanks! Our team will contact you shortly. Opening WhatsApp\u2026';statusEl.style.color='#15803d';}
+      window.open(wa,'_blank','noopener');
+    })
+    .catch(function(){
+      if(statusEl){statusEl.textContent='Opening WhatsApp to complete your enquiry\u2026';statusEl.style.color='#15803d';}
+      window.open(wa,'_blank','noopener');
+    });
+}
+
+function renderLeadForm(prompt){
+  var div=document.createElement('div');
+  div.className='ai-msg bot';
+  var uid='ail'+Date.now();
+  div.innerHTML='<div class="ai-lead">'+
+    '<div class="ai-lead-title">'+prompt+'</div>'+
+    '<input type="text" id="'+uid+'-n" placeholder="Your name" autocomplete="name"/>'+
+    '<input type="tel" id="'+uid+'-p" placeholder="Phone / WhatsApp number" autocomplete="tel"/>'+
+    '<button id="'+uid+'-b">Get Details on WhatsApp</button>'+
+    '<div class="ai-lead-status" id="'+uid+'-s"></div>'+
+    '</div>';
+  body.appendChild(div);
+  body.scrollTop=body.scrollHeight;
+
+  var btn=document.getElementById(uid+'-b');
+  var statusEl=document.getElementById(uid+'-s');
+  btn.addEventListener('click',function(){
+    var name=document.getElementById(uid+'-n').value.trim();
+    var phone=document.getElementById(uid+'-p').value.trim();
+    if(!name){statusEl.textContent='Please enter your name.';statusEl.style.color='#c0392b';return;}
+    if(phone.replace(/\D/g,'').length<10){statusEl.textContent='Please enter a valid phone number.';statusEl.style.color='#c0392b';return;}
+    sendAiLead(name,phone,statusEl,btn);
+  });
+}
+
 function processQuery(q){
   addMsg(q,'user');
   // Remove suggestions after first query
   var sug=document.getElementById('aiSuggestions');if(sug)sug.remove();
+  // GA4: log every search (free intelligence on what buyers want)
+  if(typeof window.gtag==='function'){window.gtag('event','ai_search',{search_term:q});}
   addTyping();
 
   setTimeout(function(){
@@ -196,8 +326,12 @@ function processQuery(q){
     results.sort(function(a,b){return b.s-a.s;});
     var top=results.slice(0,3);
 
+    // Save search context for the lead form
+    lastSearch={query:q,parsed:parsed,matches:top.map(function(r){return r.p.name;}).join(', ')};
+
     if(!top.length){
-      addMsg("I couldn't find an exact match. Try different keywords, or <a href='https://wa.me/919391954743?text=Hi%2C%20I%20need%20help%20finding%3A%20"+encodeURIComponent(q)+"' target='_blank'>WhatsApp us</a> for personalized help.",'bot');
+      addMsg("I couldn't find an exact match for that \u2014 but we have more inventory than shown here. Leave your details and our team will hand-pick options for you:",'bot');
+      renderLeadForm('Get personalised matches for: "'+q+'"');
       return;
     }
 
@@ -221,7 +355,8 @@ function processQuery(q){
     body.scrollTop=body.scrollHeight;
 
     setTimeout(function(){
-      addMsg("Want to refine? Just type more details, or <a href='https://wa.me/919391954743' target='_blank'>chat with our expert</a> for personalized guidance.",'bot');
+      addMsg("Want the full details, floor plans &amp; best price on these? Drop your number and our expert will send them over:",'bot');
+      renderLeadForm('Get details on these matches');
     },500);
   },800);
 }
