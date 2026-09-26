@@ -217,3 +217,25 @@
   }
 
 })();
+
+/* ═══════════════════════════════════════
+   Google Analytics 4 (GA4) — site-wide tracking
+   Measurement ID: G-1ZH7WD4ZM9
+   Loaded here so every page that includes main.js is tracked.
+═══════════════════════════════════════ */
+(function () {
+  var GA_ID = 'G-1ZH7WD4ZM9';
+
+  // Load the gtag.js library
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+  document.head.appendChild(s);
+
+  // Initialize the dataLayer + gtag
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+})();
