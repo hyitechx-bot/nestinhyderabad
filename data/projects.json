@@ -120,10 +120,11 @@
                          "id":  "candeur-kukatpally",
                          "slug":  "candeur-kukatpally/",
                          "projectName":  "Candeur Kukatpally - IDL Lake",
+                         "projectAlias":  "Candeur ARBORA",
                          "builder":  "Candeur Constructions",
                          "status":  "Pre Launch",
-                         "approval":  "GHMC Approved",
-                         "reraNumber":  "",
+                         "approval":  "RERA Approved & GHMC Approved",
+                         "reraNumber":  "P02200011363",
                          "featured":  true,
                          "location":  {
                                           "area":  "Kukatpally",
