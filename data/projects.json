@@ -135,21 +135,15 @@
                                           "longitude":  78.3996
                                       },
                          "price":  {
-                                       "startingPrice":  8900000,
-                                       "priceText":  "u{20B9}89L onwards (2.5 BHK)",
+                                       "startingPrice":  9900000,
+                                       "priceText":  "u{20B9}99L onwards (3 BHK)",
                                        "pricePerSqft":  5700
                                    },
                          "bhk":  [
-                                     "2.5 BHK",
                                      "3 BHK",
                                      "3.5 BHK"
                                  ],
                          "sizes":  [
-                                       {
-                                           "bhk":  "2.5 BHK",
-                                           "from":  1552,
-                                           "to":  1568
-                                       },
                                        {
                                            "bhk":  "3 BHK",
                                            "from":  1800,
