@@ -57,13 +57,15 @@ tr:hover td{background:rgba(201,168,76,0.04)}
 .grand-total td{background:rgba(201,168,76,0.15);color:var(--gold-light);font-weight:700;font-size:1rem}
 .pay-20 td{background:rgba(34,197,94,0.08);color:#86efac}
 .pay-30 td{background:rgba(59,130,246,0.08);color:#93c5fd}
-.pay-50 td{background:rgba(168,85,247,0.08);color:#d8b4fe}
+.pay-30s td{background:rgba(234,179,8,0.08);color:#fde68a}
+.pay-20h td{background:rgba(168,85,247,0.08);color:#d8b4fe}
 .pay-legend{display:flex;gap:16px;margin-bottom:16px;flex-wrap:wrap}
 .legend-item{display:flex;align-items:center;gap:8px;font-size:0.8rem}
 .legend-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .dot-20{background:#22c55e}
 .dot-30{background:#3b82f6}
-.dot-50{background:#a855f7}
+.dot-30s{background:#eab308}
+.dot-20h{background:#a855f7}
 .cumulative{font-size:0.78rem;color:#888}
 .btn-print{background:var(--gold);color:#000;border:none;padding:12px 28px;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;font-family:'Inter',sans-serif;transition:background 0.2s}
 .btn-print:hover{background:var(--gold-light)}
@@ -86,7 +88,8 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  .grand-total td{background:#fff3cc;color:#a8882e}
  .pay-20 td{background:#f0fdf4;color:#166534}
  .pay-30 td{background:#eff6ff;color:#1e40af}
- .pay-50 td{background:#faf5ff;color:#6b21a8}
+ .pay-30s td{background:#fefce8;color:#854d0e}
+ .pay-20h td{background:#faf5ff;color:#6b21a8}
  .btn-print{display:none}
  .form-group input,.form-group select{background:#f9f9f9;color:#000;border:1px solid #ddd}
  .flat-info{background:#f9f9f9}
@@ -136,11 +139,11 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  <!-- hidden facing field kept for JS compatibility -->
  <select id="facing" style="display:none"></select>
  <div class="flat-info" id="flatInfo">
- <div class="fi-item"><strong id="fi-size">�</strong><span>Size (Sq.Ft)</span></div>
- <div class="fi-item"><strong id="fi-floor">�</strong><span>Floor</span></div>
- <div class="fi-item"><strong id="fi-facing">�</strong><span>Facing</span></div>
- <div class="fi-item"><strong id="fi-bhk">�</strong><span>Configuration</span></div>
- <div class="fi-item"><strong id="fi-corner">�</strong><span>Corner Unit</span></div>
+ <div class="fi-item"><strong id="fi-size">—</strong><span>Size (Sq.Ft)</span></div>
+ <div class="fi-item"><strong id="fi-floor">—</strong><span>Floor</span></div>
+ <div class="fi-item"><strong id="fi-facing">—</strong><span>Facing</span></div>
+ <div class="fi-item"><strong id="fi-bhk">—</strong><span>Configuration</span></div>
+ <div class="fi-item"><strong id="fi-corner">—</strong><span>Corner Unit</span></div>
  </div>
 </div>
 
@@ -179,17 +182,17 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  <div class="checkbox-row">
  <input type="checkbox" id="corner" onchange="calculate()"/>
  <label for="corner">Corner Premium</label>
- <span class="rate">?100/sqft</span>
+ <span class="rate">₹100/sqft</span>
  </div>
  <div class="checkbox-row">
  <input type="checkbox" id="viewPremium" onchange="calculate()"/>
  <label for="viewPremium">View Premium Charges</label>
- <span class="rate">?100/sqft</span>
+ <span class="rate">₹100/sqft</span>
  </div>
  <div class="checkbox-row">
  <input type="checkbox" id="parking" onchange="calculate()" checked/>
  <label for="parking">Car Parking (1 Slot)</label>
- <span class="rate">?3,50,000 fixed</span>
+ <span class="rate">₹3,50,000 fixed</span>
  </div>
  <div class="section-label" style="margin-top:16px">Fixed Charges</div>
  <div class="form-row">
@@ -243,12 +246,16 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  <div style="font-size:1.1rem;color:#86efac;font-weight:700" id="pay20">-</div>
  </div>
  <div style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);border-radius:8px;padding:12px;text-align:center">
- <div style="font-size:0.7rem;color:#93c5fd;text-transform:uppercase;letter-spacing:1px">30% Installments</div>
+ <div style="font-size:0.7rem;color:#93c5fd;text-transform:uppercase;letter-spacing:1px">30% on Construction</div>
  <div style="font-size:1.1rem;color:#93c5fd;font-weight:700" id="pay30">-</div>
  </div>
- <div style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);border-radius:8px;padding:12px;text-align:center;grid-column:span 2">
- <div style="font-size:0.7rem;color:#d8b4fe;text-transform:uppercase;letter-spacing:1px">50% on Possession</div>
- <div style="font-size:1.3rem;color:#d8b4fe;font-weight:700" id="pay50">-</div>
+ <div style="background:rgba(234,179,8,0.1);border:1px solid rgba(234,179,8,0.2);border-radius:8px;padding:12px;text-align:center">
+ <div style="font-size:0.7rem;color:#fde68a;text-transform:uppercase;letter-spacing:1px">30% on Structure</div>
+ <div style="font-size:1.1rem;color:#fde68a;font-weight:700" id="pay30s">-</div>
+ </div>
+ <div style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.2);border-radius:8px;padding:12px;text-align:center">
+ <div style="font-size:0.7rem;color:#d8b4fe;text-transform:uppercase;letter-spacing:1px">20% on Handover</div>
+ <div style="font-size:1.1rem;color:#d8b4fe;font-weight:700" id="pay20h">-</div>
  </div>
  </div>
  <div class="note" style="margin-top:16px">* Stamp Duty ~6% is an estimate based on Telangana prevailing rates. Actual amount depends on registration value. GST 5% applicable on sale consideration. TDS 1% deducted at source on each installment.</div>
@@ -275,8 +282,9 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  <div class="card-title">Payment Schedule</div>
  <div class="pay-legend">
  <div class="legend-item"><div class="legend-dot dot-20"></div><span style="color:#86efac">20% On Booking (within 21 days)</span></div>
- <div class="legend-item"><div class="legend-dot dot-30"></div><span style="color:#93c5fd">30% Construction Linked Installments</span></div>
- <div class="legend-item"><div class="legend-dot dot-50"></div><span style="color:#d8b4fe">50% On Possession</span></div>
+ <div class="legend-item"><div class="legend-dot dot-30"></div><span style="color:#93c5fd">30% On Construction (milestone installments)</span></div>
+ <div class="legend-item"><div class="legend-dot dot-30s"></div><span style="color:#fde68a">30% On Structure (milestone installments)</span></div>
+ <div class="legend-item"><div class="legend-dot dot-20h"></div><span style="color:#d8b4fe">20% On Handover</span></div>
  </div>
  <table>
  <thead>
@@ -347,16 +355,16 @@ const stages=[
   {name:'On Casting of 3rd Floor Slab',pct:5,group:'30'},
   {name:'On Casting of 6th Floor Slab',pct:5,group:'30'},
   {name:'On Casting of 9th Floor Slab',pct:5,group:'30'},
-  {name:'On Casting of 12th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 15th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 18th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 21st Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 24th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 27th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 30th Floor Slab',pct:5,group:'50'},
-  {name:'On Casting of 33rd Floor Slab',pct:5,group:'50'},
-  {name:'At the time of Electrical Wiring',pct:5,group:'50'},
-  {name:'At the time of Registration',pct:5,group:'50'},
+  {name:'On Casting of 12th Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 15th Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 18th Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 21st Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 24th Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 27th Floor Slab',pct:5,group:'30s'},
+  {name:'On Casting of 30th Floor Slab',pct:5,group:'20h'},
+  {name:'On Casting of 33rd Floor Slab',pct:5,group:'20h'},
+  {name:'At the time of Electrical Wiring',pct:5,group:'20h'},
+  {name:'At the time of Registration / Handover',pct:5,group:'20h'},
 ];
 function buildFlatList(tower){
   const layout=towerLayouts[tower],floors=towerFloors[tower],flats=[];
@@ -396,7 +404,7 @@ function resetInfo(){
   document.getElementById('baseCostDisplay').textContent='-';
   document.getElementById('fixedDisplay').textContent='-';
   ['gstDisplay','stampDisplay','allInDisplay'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent='-';});
-  ['pay20','pay30','pay50'].forEach(id=>document.getElementById(id).textContent='-');
+  ['pay20','pay30','pay30s','pay20h'].forEach(id=>document.getElementById(id).textContent='-');
   document.getElementById('breakdownBody').innerHTML='<tr><td colspan="5" style="text-align:center;color:#555;padding:24px">Select a flat to see price breakdown</td></tr>';
   document.getElementById('scheduleBody').innerHTML='<tr><td colspan="8" style="text-align:center;color:#555;padding:24px">Select a flat to see payment schedule</td></tr>';
   document.getElementById('floorRise').value=0;
@@ -445,7 +453,8 @@ function calculate(){
   document.getElementById('fixedDisplay').textContent=fmt(regTotal);
   document.getElementById('pay20').textContent=fmt(saleConsid*0.20);
   document.getElementById('pay30').textContent=fmt(saleConsid*0.30);
-  document.getElementById('pay50').textContent=fmt(saleConsid*0.50);
+  document.getElementById('pay30s').textContent=fmt(saleConsid*0.30);
+  document.getElementById('pay20h').textContent=fmt(saleConsid*0.20);
   const R=String.fromCharCode(8377);
   const rows=[
     {sl:1,name:'Basic Price',rate:`${R}${basePrice}/sqft`,sqft:sft,amt:basePrice*sft},
@@ -478,7 +487,7 @@ function calculate(){
   let sh='';
   stages.forEach((s,i)=>{
     const inst=saleConsid*s.pct/100,tds=inst*RATES.tds,gst=inst*RATES.gst;
-    const rc=s.group==='20'?'pay-20':s.group==='30'?'pay-30':'pay-50';
+    const rc=s.group==='20'?'pay-20':s.group==='30'?'pay-30':s.group==='30s'?'pay-30s':'pay-20h';
     sh+=`<tr class="${rc}"><td>${i+1}</td><td>${s.name}</td><td>${s.pct}%</td><td class="amount">${fmt(inst)}</td><td class="amount">${fmt(tds)}</td><td class="amount">${fmt(gst)}</td><td class="amount">${fmt(inst+gst)}</td><td class="amount">${fmt(inst+gst+tds)}</td></tr>`;
   });
   const tg=saleConsid*RATES.gst,tt=saleConsid*RATES.tds;
