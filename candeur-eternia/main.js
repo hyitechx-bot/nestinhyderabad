@@ -76,7 +76,7 @@ document.getElementById('leadForm').addEventListener('submit', async function (e
     }
   } catch (err) {
     submitBtn.disabled = false;
-    submitBtn.textContent = 'Book Free Site Visit';
+    submitBtn.textContent = 'Book Site Visit';
     alert('Something went wrong. Please call us directly at +91 93919 54743 or WhatsApp us.');
     console.error(err);
   }

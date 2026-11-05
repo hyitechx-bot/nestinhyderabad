@@ -2,13 +2,13 @@
 (function(){
 // Project database
 var DB=[
-{id:"eternia",name:"Candeur Eternia",area:"Bachupally",price:12000000,maxPrice:18000000,bhk:[2,2.5,3],status:"under construction",slug:"candeur-eternia-bachupally.html",tags:["orr","gated community","clubhouse","pool","theatre","restaurant","bachupally","miyapur extension","myron mall"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Eternia"},
-{id:"kukatpally",name:"Candeur Kukatpally IDL Lake",area:"Kukatpally",price:9900000,maxPrice:15000000,bhk:[3],status:"pre launch",slug:"candeur-kukatpally/",tags:["idl lake","kukatpally","kphb","metro","pre-launch","eoi","clubhouse","20 acres","ghmc","ghmc approved","rera","rera approved","arbora","candeur arbora","P02200011363"],priceText:"\u20B999L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Kukatpally"},
-{id:"skyline",name:"Candeur Skyline",area:"Financial District",price:90000000,maxPrice:200000000,bhk:[4],status:"under construction",slug:"candeur-skyline/",tags:["ultra luxury","sky villa","financial district","gachibowli","nanakramguda","premium","exclusive"],priceText:"\u20B99 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Skyline"},
-{id:"lakescape",name:"Candeur Lakescape",area:"Kondapur",price:9000000,maxPrice:22000000,bhk:[2,2.5,3,3.5],status:"under construction",slug:"candeur-lakescape/",tags:["lake view","kondapur","hitech city","madhapur","it hub"],priceText:"\u20B990L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Lakescape"},
-{id:"crescent",name:"Candeur Crescent",area:"Gachibowli",price:10000000,maxPrice:25000000,bhk:[2.5,3],status:"ready to move",slug:"candeur-crescent/",tags:["ready to move","handover","gachibowli","serilingampally","immediate","move in"],priceText:"\u20B91 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Crescent"},
-{id:"twins",name:"Candeur Twins",area:"Miyapur",price:12000000,maxPrice:18000000,bhk:[3],status:"under construction",slug:"candeur-twins/",tags:["twin towers","miyapur","metro","47 floors"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20Twins"},
-{id:"c40",name:"Candeur C40",area:"Miyapur",price:7000000,maxPrice:12000000,bhk:[2,2.5,3],status:"ready to move",slug:"candeur-c40/",tags:["ready to move","completed","affordable","budget","miyapur","metro","compact","value"],priceText:"\u20B970L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Candeur%20C40"},
+{id:"eternia",name:"  Eternia",area:"Bachupally",price:12000000,maxPrice:18000000,bhk:[2,2.5,3],status:"under construction",slug:" -eternia-bachupally.html",tags:["orr","gated community","clubhouse","pool","theatre","restaurant","bachupally","miyapur extension","myron mall"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Eternia"},
+{id:"kukatpally",name:"  Kukatpally IDL Lake",area:"Kukatpally",price:9900000,maxPrice:15000000,bhk:[3],status:"pre launch",slug:" -kukatpally/",tags:["idl lake","kukatpally","kphb","metro","pre-launch","eoi","clubhouse","20 acres","ghmc","ghmc approved","rera","rera approved","arbora","  arbora","P02200011363"],priceText:"\u20B999L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Kukatpally"},
+{id:"skyline",name:"  Skyline",area:"Financial District",price:90000000,maxPrice:200000000,bhk:[4],status:"under construction",slug:" -skyline/",tags:["ultra luxury","sky villa","financial district","gachibowli","nanakramguda","premium","exclusive"],priceText:"\u20B99 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Skyline"},
+{id:"lakescape",name:"  Lakescape",area:"Kondapur",price:9000000,maxPrice:22000000,bhk:[2,2.5,3,3.5],status:"under construction",slug:" -lakescape/",tags:["lake view","kondapur","hitech city","madhapur","it hub"],priceText:"\u20B990L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Lakescape"},
+{id:"crescent",name:"  Crescent",area:"Gachibowli",price:10000000,maxPrice:25000000,bhk:[2.5,3],status:"ready to move",slug:" -crescent/",tags:["ready to move","handover","gachibowli","serilingampally","immediate","move in"],priceText:"\u20B91 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Crescent"},
+{id:"twins",name:"  Twins",area:"Miyapur",price:12000000,maxPrice:18000000,bhk:[3],status:"under construction",slug:" -twins/",tags:["twin towers","miyapur","metro","47 floors"],priceText:"\u20B91.2 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20Twins"},
+{id:"c40",name:"  C40",area:"Miyapur",price:7000000,maxPrice:12000000,bhk:[2,2.5,3],status:"ready to move",slug:" -c40/",tags:["ready to move","completed","affordable","budget","miyapur","metro","compact","value"],priceText:"\u20B970L onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20 %20C40"},
 {id:"jains",name:"Jain's Central Park East",area:"Narapally",price:6000000,maxPrice:15000000,bhk:[2,3],status:"under construction",slug:"jains-central-park-east-hyderabad.html",tags:["narapally","uppal","nh44","eastern"],priceText:"Competitive Pricing",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Jains%20CPE"},
 {id:"sattva",name:"Sattva Lago",area:"Kokapet",price:45000000,maxPrice:80000000,bhk:[3,3.5,4],status:"new launch",slug:"sattva-lago/",tags:["luxury","ultra luxury","kokapet","neopolis","sattva","financial district","premium"],priceText:"\u20B94.5 Cr onwards",wa:"https://wa.me/919391954743?text=Hi%2C%20AI%20matched%20Sattva%20Lago"},
 {id:"aparna-cyberscape",name:"Aparna Cyberscape",area:"Nallagandla",price:0,maxPrice:0,bhk:[2,3],status:"under construction",slug:"",tags:["nallagandla","aparna","rera"],priceText:"On Request",wa:"https://wa.me/919391954743?text=Hi%2C%20interested%20in%20Aparna%20Cyberscape"},
@@ -99,7 +99,7 @@ function parseQuery(q){
   if(q.match(/new\s*launch/))r.status="new launch";
 
   // ── Builder matching ──
-  var builders=["candeur","sattva","aparna","brigade","godrej","mantri","my home","phoenix","prestige","rajapushpa","ramky","urbanrise","jain"];
+  var builders=[" ","sattva","aparna","brigade","godrej","mantri","my home","phoenix","prestige","rajapushpa","ramky","urbanrise","jain"];
   builders.forEach(function(b){if(q.indexOf(b)>-1)r.tags.push(b);});
   ["luxury","ultra luxury","affordable","budget","pool","clubhouse","lake","view","green","metro","premium","compact","value"].forEach(function(f){if(q.indexOf(f)>-1)r.tags.push(f);});
   return r;
@@ -134,7 +134,7 @@ function score(p,parsed){
   if(parsed.status&&p.status===parsed.status){s+=20;reasons.push(p.status+" \u2713");}
   parsed.tags.forEach(function(t){
     // Builder match gets higher score
-    if(["candeur","sattva","aparna","brigade","godrej","mantri","my home","phoenix","prestige","rajapushpa","ramky","urbanrise","jain"].indexOf(t)>-1){
+    if([" ","sattva","aparna","brigade","godrej","mantri","my home","phoenix","prestige","rajapushpa","ramky","urbanrise","jain"].indexOf(t)>-1){
       if(p.tags.indexOf(t)>-1||p.name.toLowerCase().indexOf(t)>-1){s+=25;reasons.push(t.charAt(0).toUpperCase()+t.slice(1)+" project \u2713");}
     } else {
       if(p.tags.indexOf(t)>-1){s+=8;reasons.push(t);}
