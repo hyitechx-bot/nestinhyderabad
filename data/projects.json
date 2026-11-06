@@ -140,32 +140,33 @@
                                        "pricePerSqft":  5700
                                    },
                          "bhk":  [
-                                     "3 BHK",
-                                     "3.5 BHK"
+                                     "3 BHK"
                                  ],
                          "sizes":  [
                                        {
+                                           "bhk":  "3 BHK Compact",
+                                           "from":  1565,
+                                           "to":  1575
+                                       },
+                                       {
                                            "bhk":  "3 BHK",
                                            "from":  1800,
-                                           "to":  1880
+                                           "to":  1905
                                        },
                                        {
-                                           "bhk":  "3.5 BHK",
+                                           "bhk":  "3 BHK Premium",
                                            "from":  2150,
-                                           "to":  2150
-                                       },
-                                       {
-                                           "bhk":  "3 BHK Large",
-                                           "from":  2207,
-                                           "to":  2207
+                                           "to":  2205
                                        }
                                    ],
                          "projectDetails":  {
                                                 "landArea":  "20 Acres",
+                                                "openSpace":  "75%",
+                                                "centralPark":  "4.3 Acres",
                                                 "towers":  13,
-                                                "floors":  "G+25",
+                                                "floors":  "Up to 25 Floors",
                                                 "totalUnits":  0,
-                                                "clubhouse":  "1,36,000 Sq.Ft",
+                                                "clubhouse":  "1,36,000 Sq.Ft Multi-Level",
                                                 "possession":  "TBA"
                                             },
                          "propertyType":  "Apartment",
