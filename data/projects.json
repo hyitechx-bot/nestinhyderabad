@@ -43,7 +43,7 @@
                                        },
                                        {
                                            "bhk":  "3 BHK",
-                                           "from":  1681,
+                                           "from":  1711,
                                            "to":  2192
                                        }
                                    ],
@@ -57,46 +57,40 @@
                                             },
                          "propertyType":  "Apartment",
                          "amenities":  [
-                                           "Swimming Pool",
-                                           "Gymnasium",
-                                           "Preview Theatre",
-                                           "Restaurant",
-                                           "Guest Rooms",
-                                           "Banquet Hall",
-                                           "Jogging Track",
-                                           "Kids Play Area",
-                                           "Landscaped Gardens",
-                                           "Power Backup",
-                                           "24/7 Security"
-                                       ],
+                                            "Two Swimming Pools",
+                                            "Cardio Gym and Gym",
+                                            "Preview Theatre",
+                                            "Restaurant / Dining Hall",
+                                            "Banquet Hall",
+                                            "12 Guest Rooms",
+                                            "Spa",
+                                            "Squash and Badminton Courts",
+                                            "Two Pickleball Courts",
+                                            "Cricket Net",
+                                            "Trim Trail and Cycling Track",
+                                            "Amphitheatre",
+                                            "Children Play Area and Playzone",
+                                            "Pet Park",
+                                            "Super Market and Pharmacy",
+                                            "100% DG Backup (excl. EV charging)",
+                                            "CCTV Surveillance"
+                                        ],
                          "connectivity":  [
-                                              {
-                                                  "place":  "Myron Mall (Upcoming)",
-                                                  "distance":  "1 min"
-                                              },
-                                              {
-                                                  "place":  "ORR Exit 4",
-                                                  "distance":  "5 mins"
-                                              },
-                                              {
-                                                  "place":  "Hitech City",
-                                                  "distance":  "20 mins"
-                                              },
-                                              {
-                                                  "place":  "Miyapur Metro",
-                                                  "distance":  "12 mins"
-                                              },
-                                              {
-                                                  "place":  "DPS School",
-                                                  "distance":  "7 mins"
-                                              }
+                                              {"place":  "ORR Exit 4", "distance":  "5 mins"},
+                                              {"place":  "Miyapur X Roads", "distance":  "10 mins"},
+                                              {"place":  "Miyapur Metro Station", "distance":  "12 mins"},
+                                              {"place":  "JNTU", "distance":  "16 mins"},
+                                              {"place":  "Hitech City", "distance":  "20 mins"},
+                                              {"place":  "Gachibowli", "distance":  "30 mins"},
+                                              {"place":  "Silver Oaks School", "distance":  "1.9 km"},
+                                              {"place":  "Kennedy High Global School", "distance":  "8 mins"},
+                                              {"place":  "Reach Super Speciality Hospital", "distance":  "7 mins"}
                                           ],
                          "highlights":  [
                                             "7.7-Acre Gated Community",
-                                            "68,000+ Sq.Ft Amenities",
-                                            "5 Mins to ORR",
-                                            "Two Grand Clubhouses",
-                                            "Myron Mall � (Upcoming)"
+                                            "68,000+ Sq.Ft Clubhouse 1 plus Clubhouse 2",
+                                            "5 Mins to ORR Exit 4",
+                                            "Two Clubhouses and 40-Point Outdoor Masterplan"
                                         ],
                          "seo":  {
                                      "title":  "Candeur Eternia Bachupally Hyderabad",
@@ -204,7 +198,6 @@
                                             "20-Acre Community",
                                             "4.3-Acre Forest-Themed Central Park",
                                             "1,36,000 Sq.Ft Clubhouse",
-                                            "Direct ORR Access",
                                             "EOI Available"
                                         ],
                          "seo":  {
@@ -218,7 +211,6 @@
                                                       "RERA approved apartments Kukatpally",
                                                       "Candeur Kukatpally GHMC approved",
                                                       "GHMC approved apartments Kukatpally",
-                                                      "Candeur Kukatpally apartments",
                                                       "pre-launch Kukatpally",
                                                       "Candeur Constructions Kukatpally"
                                                   ]

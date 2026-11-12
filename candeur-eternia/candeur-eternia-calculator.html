@@ -40,7 +40,7 @@ body{font-family:'Inter',sans-serif;background:#0f0f0f;color:#e0e0e0;min-height:
 .form-group input,.form-group select{background:#111;border:1px solid var(--border);border-radius:8px;padding:10px 12px;color:#e0e0e0;font-size:0.9rem;font-family:'Inter',sans-serif;transition:border-color 0.2s}
 .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--gold)}
 .form-group input[readonly]{color:#888;cursor:default}
-.flat-info{background:#111;border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:18px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.flat-info{background:#111;border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .fi-item strong{display:block;font-size:1.1rem;color:var(--gold);font-family:'Playfair Display',serif}
 .fi-item span{font-size:0.72rem;color:#666;text-transform:uppercase;letter-spacing:0.5px}
 .checkbox-row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
@@ -111,39 +111,27 @@ tr:hover td{background:rgba(201,168,76,0.04)}
 
 <!-- SECTION 1: FLAT SELECTOR -->
 <div class="card">
- <div class="card-title">Step 1 Select Flat</div>
+ <div class="card-title">Step 1 Select Configuration</div>
  <div class="form-row">
- <div class="form-group">
- <label>Tower</label>
- <select id="block" onchange="updateBHK()">
- <option value="">-- Select Tower --</option>
- <option value="A">Tower A (6 flats/floor 32 floors All 3 BHK)</option>
- <option value="B">Tower B (10 flats/floor 32 floors 2/2.5/3 BHK)</option>
- <option value="C">Tower C (6 flats/floor 32 floors 2.5/3 BHK)</option>
- <option value="D">Tower D (8 flats/floor 35 floors 2/3 BHK)</option>
- </select>
- </div>
  <div class="form-group">
  <label>BHK Type</label>
  <select id="bhk" onchange="updateFlats()">
  <option value="">-- Select BHK --</option>
+ <option value="2 BHK">2 BHK</option>
+ <option value="2.5 BHK">2.5 BHK</option>
+ <option value="3 BHK">3 BHK</option>
  </select>
  </div>
- <div class="form-group" style="grid-column:span 2">
- <label>Flat Number</label>
+ <div class="form-group">
+ <label>Size (Sq.Ft)</label>
  <select id="flat" onchange="updateFlatInfo()">
- <option value="">-- Select Flat --</option>
+ <option value="">-- Select Size --</option>
  </select>
  </div>
  </div>
- <!-- hidden facing field kept for JS compatibility -->
- <select id="facing" style="display:none"></select>
  <div class="flat-info" id="flatInfo">
  <div class="fi-item"><strong id="fi-size">—</strong><span>Size (Sq.Ft)</span></div>
- <div class="fi-item"><strong id="fi-floor">—</strong><span>Floor</span></div>
- <div class="fi-item"><strong id="fi-facing">—</strong><span>Facing</span></div>
  <div class="fi-item"><strong id="fi-bhk">—</strong><span>Configuration</span></div>
- <div class="fi-item"><strong id="fi-corner">—</strong><span>Corner Unit</span></div>
  </div>
 </div>
 
@@ -164,10 +152,6 @@ tr:hover td{background:rgba(201,168,76,0.04)}
  <div class="form-group">
  <label>Floor Rise (?/sqft) auto</label>
  <input type="number" id="floorRise" value="0" readonly/>
- </div>
- <div class="form-group">
- <label>East Facing (?/sqft) auto</label>
- <input type="number" id="eastFacing" value="0" readonly/>
  </div>
  <div class="form-group">
  <label>Corpus Fund (?/sqft)</label>
@@ -305,47 +289,16 @@ tr:hover td{background:rgba(201,168,76,0.04)}
 </div><!-- end container -->
 
 <script>
-const towerLayouts={
-  A:[
-    {unit:1,bhk:'3 BHK',sft:2192,corner:true, facing:'East / North-East'},
-    {unit:2,bhk:'3 BHK',sft:2004,corner:false,facing:'East'},
-    {unit:3,bhk:'3 BHK',sft:1874,corner:false,facing:'South-East'},
-    {unit:4,bhk:'3 BHK',sft:2192,corner:true, facing:'West / North-West'},
-    {unit:5,bhk:'3 BHK',sft:2004,corner:false,facing:'West'},
-    {unit:6,bhk:'3 BHK',sft:2192,corner:true, facing:'North-West'},
-  ],
-  B:[
-    {unit:1, bhk:'2 BHK',  sft:1467,corner:true, facing:'East'},
-    {unit:2, bhk:'2.5 BHK',sft:1385,corner:false,facing:'East'},
-    {unit:3, bhk:'3 BHK',  sft:1608,corner:false,facing:'South-East'},
-    {unit:4, bhk:'3 BHK',  sft:1874,corner:false,facing:'South'},
-    {unit:5, bhk:'3 BHK',  sft:2004,corner:false,facing:'South-West'},
-    {unit:6, bhk:'3 BHK',  sft:2004,corner:false,facing:'North-West'},
-    {unit:7, bhk:'3 BHK',  sft:1874,corner:false,facing:'North'},
-    {unit:8, bhk:'3 BHK',  sft:1608,corner:false,facing:'North-East'},
-    {unit:9, bhk:'2.5 BHK',sft:1385,corner:false,facing:'West'},
-    {unit:10,bhk:'2 BHK',  sft:1467,corner:true, facing:'West'},
-  ],
-  C:[
-    {unit:1,bhk:'2.5 BHK',sft:1590,corner:true, facing:'East'},
-    {unit:2,bhk:'3 BHK',  sft:1799,corner:false,facing:'East'},
-    {unit:3,bhk:'3 BHK',  sft:2182,corner:true, facing:'South-East'},
-    {unit:4,bhk:'3 BHK',  sft:2182,corner:true, facing:'South-West'},
-    {unit:5,bhk:'3 BHK',  sft:1799,corner:false,facing:'West'},
-    {unit:6,bhk:'2.5 BHK',sft:1590,corner:true, facing:'West'},
-  ],
-  D:[
-    {unit:1,bhk:'2 BHK',sft:1546,corner:true, facing:'East'},
-    {unit:2,bhk:'3 BHK',sft:1874,corner:false,facing:'East'},
-    {unit:3,bhk:'3 BHK',sft:1874,corner:false,facing:'South-East'},
-    {unit:4,bhk:'3 BHK',sft:2182,corner:true, facing:'South'},
-    {unit:5,bhk:'3 BHK',sft:2182,corner:true, facing:'North'},
-    {unit:6,bhk:'3 BHK',sft:1874,corner:false,facing:'North-West'},
-    {unit:7,bhk:'3 BHK',sft:1874,corner:false,facing:'West'},
-    {unit:8,bhk:'2 BHK',sft:1546,corner:true, facing:'West'},
-  ]
-};
-const towerFloors={A:32,B:32,C:32,D:35};
+const sizeOptions=[
+  {bhk:'2 BHK',  sft:1462},
+  {bhk:'2 BHK',  sft:1546},
+  {bhk:'2.5 BHK',sft:1590},
+  {bhk:'2.5 BHK',sft:1619},
+  {bhk:'3 BHK',  sft:1711},
+  {bhk:'3 BHK',  sft:1874},
+  {bhk:'3 BHK',  sft:2004},
+  {bhk:'3 BHK',  sft:2192},
+];
 const RATES={basePrice:6499,floorCharge:40,cornerPremium:100,viewPremium:100,amenities:500,corpusFund:50,maintenance:54,maintenanceGST:0.18,carParking:350000,legal:25000,pipedGas:30000,tds:0.01,gst:0.05,stampDuty:0.06};
 const stages=[
   {name:'Booking Advance - Payable within 21 days from Date of Booking',pct:20,group:'20'},
@@ -366,39 +319,22 @@ const stages=[
   {name:'At the time of Electrical Wiring',pct:5,group:'20h'},
   {name:'At the time of Registration / Handover',pct:5,group:'20h'},
 ];
-function buildFlatList(tower){
-  const layout=towerLayouts[tower],floors=towerFloors[tower],flats=[];
-  for(let f=1;f<=floors;f++) layout.forEach(u=>flats.push({id:`${tower}${f}0${u.unit}`,label:`${tower}-${f}0${u.unit} | Floor ${f} | Unit ${u.unit} | ${u.bhk} | ${u.sft} sft | ${u.facing}`,floor:f,unit:u.unit,bhk:u.bhk,sft:u.sft,corner:u.corner,facing:u.facing}));
-  return flats;
-}
 function fmt(n){return String.fromCharCode(8377)+Math.round(n).toLocaleString('en-IN');}
 function numWords(n){n=Math.round(n);if(n>=10000000)return(n/10000000).toFixed(2)+' Crores';if(n>=100000)return(n/100000).toFixed(2)+' Lakhs';return n.toLocaleString('en-IN');}
-function updateBHK(){
-  const t=document.getElementById('block').value,b=document.getElementById('bhk');
-  b.innerHTML='<option value="">-- Select BHK --</option>';
-  document.getElementById('flat').innerHTML='<option value="">-- Select Flat --</option>';
-  resetInfo(); if(!t)return;
-  [...new Set(towerLayouts[t].map(u=>u.bhk))].forEach(x=>b.innerHTML+=`<option value="${x}">${x}</option>`);
-}
 function updateFlats(){
-  const t=document.getElementById('block').value,bk=document.getElementById('bhk').value,s=document.getElementById('flat');
-  s.innerHTML='<option value="">-- Select Flat --</option>'; resetInfo(); if(!t||!bk)return;
-  buildFlatList(t).filter(f=>f.bhk===bk).forEach(f=>s.innerHTML+=`<option value="${f.id}">${f.label}</option>`);
+  const bk=document.getElementById('bhk').value,s=document.getElementById('flat');
+  s.innerHTML='<option value="">-- Select Size --</option>'; resetInfo(); if(!bk)return;
+  sizeOptions.filter(o=>o.bhk===bk).forEach(o=>s.innerHTML+=`<option value="${o.sft}">${bk} | ${o.sft.toLocaleString('en-IN')} sft</option>`);
 }
 function updateFlatInfo(){
-  const t=document.getElementById('block').value,bk=document.getElementById('bhk').value,id=document.getElementById('flat').value;
-  if(!t||!bk||!id)return;
-  const flat=buildFlatList(t).find(f=>f.id===id); if(!flat)return;
-  document.getElementById('fi-size').textContent=flat.sft.toLocaleString('en-IN');
-  document.getElementById('fi-floor').textContent=flat.floor;
-  document.getElementById('fi-facing').textContent=flat.facing;
-  document.getElementById('fi-bhk').textContent=flat.bhk;
-  document.getElementById('fi-corner').textContent=flat.corner?'Corner':'-';
-  document.getElementById('corner').checked=flat.corner;
+  const bk=document.getElementById('bhk').value,sft=parseInt(document.getElementById('flat').value,10);
+  if(!bk||!sft)return;
+  document.getElementById('fi-size').textContent=sft.toLocaleString('en-IN');
+  document.getElementById('fi-bhk').textContent=bk;
   calculate();
 }
 function resetInfo(){
-  ['fi-size','fi-floor','fi-facing','fi-bhk','fi-corner'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent='-';});
+  ['fi-size','fi-bhk'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent='-';});
   document.getElementById('grandTotalDisplay').textContent=String.fromCharCode(8377)+' -';
   document.getElementById('grandTotalWords').textContent='Select a flat to calculate';
   document.getElementById('baseCostDisplay').textContent='-';
@@ -408,23 +344,16 @@ function resetInfo(){
   document.getElementById('breakdownBody').innerHTML='<tr><td colspan="5" style="text-align:center;color:#555;padding:24px">Select a flat to see price breakdown</td></tr>';
   document.getElementById('scheduleBody').innerHTML='<tr><td colspan="8" style="text-align:center;color:#555;padding:24px">Select a flat to see payment schedule</td></tr>';
   document.getElementById('floorRise').value=0;
-  document.getElementById('eastFacing').value=0;
 }
 function calculate(){
-  const t=document.getElementById('block').value,bk=document.getElementById('bhk').value,id=document.getElementById('flat').value;
-  if(!t||!bk||!id)return;
-  const flat=buildFlatList(t).find(f=>f.id===id); if(!flat)return;
-  const sft=flat.sft,floor=flat.floor;
+  const bk=document.getElementById('bhk').value,sft=parseInt(document.getElementById('flat').value,10);
+  if(!bk||!sft)return;
   document.getElementById('fi-size').textContent=sft.toLocaleString('en-IN');
-  document.getElementById('fi-floor').textContent=floor;
-  document.getElementById('fi-facing').textContent=flat.facing;
-  document.getElementById('fi-bhk').textContent=flat.bhk;
-  document.getElementById('fi-corner').textContent=flat.corner?'Corner':'-';
+  document.getElementById('fi-bhk').textContent=bk;
   const basePrice=parseFloat(document.getElementById('basePrice').value)||RATES.basePrice;
   const amenities=parseFloat(document.getElementById('amenities').value)||RATES.amenities;
   const floorChg=RATES.floorCharge;
   document.getElementById('floorRise').value=floorChg;
-  document.getElementById('eastFacing').value=0;
   const cornerRate=document.getElementById('corner').checked?RATES.cornerPremium:0;
   const viewRate=document.getElementById('viewPremium').checked?RATES.viewPremium:0;
   const corpusRate=parseFloat(document.getElementById('corpus').value)||RATES.corpusFund;
