@@ -19,7 +19,7 @@ if (form) {
       const res = await fetch('https://formspree.io/f/mjgpzezo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ name, phone, config, page, project: 'Candeur Kukatpally - IDL Lake' }),
+        body: JSON.stringify({ name, phone, config, page, project: 'Candeur Kukatpally' }),
       });
       if (res.ok) {
         document.getElementById('sidebarSuccess').hidden = false;
