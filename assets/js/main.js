@@ -225,6 +225,11 @@
 ═══════════════════════════════════════ */
 (function () {
   var GA_ID = 'G-1ZH7WD4ZM9';
+  var AW_ID = 'AW-18573329414'; // Google Ads
+
+  // The Google tag is normally installed in each page's <head>.
+  // Only load it here as a fallback, so gtag.js is never loaded twice.
+  if (typeof window.gtag === 'function') return;
 
   // Load the gtag.js library
   var s = document.createElement('script');
@@ -238,6 +243,7 @@
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', GA_ID);
+  gtag('config', AW_ID);
 })();
 
 /* ═══════════════════════════════════════
@@ -314,6 +320,8 @@
       var waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
 
       function finishSuccess() {
+        // Google Ads conversion: "Submit lead form"
+        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/MinWCK2y8LcdEIaIuphF' }); }
         if (statusEl) {
           statusEl.textContent = '✅ Thank you! Our team will contact you shortly. Opening WhatsApp…';
           statusEl.style.color = '#2f6b34';
