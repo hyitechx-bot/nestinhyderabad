@@ -321,7 +321,7 @@
 
       function finishSuccess() {
         // Google Ads conversion: "Submit lead form"
-        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/MinWCK2y8LcdEIaIuphF' }); }
+        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/88SUCLrtm7gdEIaIuphF' }); }
         if (statusEl) {
           statusEl.textContent = '✅ Thank you! Our team will contact you shortly. Opening WhatsApp…';
           statusEl.style.color = '#2f6b34';

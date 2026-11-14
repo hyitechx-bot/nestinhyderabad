@@ -277,7 +277,7 @@ function sendAiLead(name,phone,statusEl,btn){
   fetch(FORMSPREE_URL,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
     .then(function(res){
       // Google Ads conversion: "Submit lead form" (only when the lead was captured)
-      if(res&&res.ok&&typeof window.gtag==='function'){window.gtag('event','conversion',{send_to:'AW-18573329414/MinWCK2y8LcdEIaIuphF'});}
+      if(res&&res.ok&&typeof window.gtag==='function'){window.gtag('event','conversion',{send_to:'AW-18573329414/88SUCLrtm7gdEIaIuphF'});}
       if(statusEl){statusEl.textContent='\u2705 Thanks! Our team will contact you shortly. Opening WhatsApp\u2026';statusEl.style.color='#15803d';}
       window.open(wa,'_blank','noopener');
     })

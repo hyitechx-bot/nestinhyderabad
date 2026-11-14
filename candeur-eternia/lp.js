@@ -42,7 +42,7 @@ if (form) {
         form.reset();
         btn.textContent = 'Submitted ✓';
         // Google Ads conversion: "Submit lead form"
-        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/MinWCK2y8LcdEIaIuphF' }); }
+        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/88SUCLrtm7gdEIaIuphF' }); }
         // GA4 conversion event — lets you measure which page generates leads
         if (typeof window.gtag === 'function') {
           window.gtag('event', 'generate_lead', {

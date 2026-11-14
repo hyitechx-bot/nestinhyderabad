@@ -1014,7 +1014,7 @@
    const data = { name, phone, email: document.getElementById('email').value.trim(), config: document.getElementById('config').value, message: document.getElementById('message').value.trim() };
    try {
      const res = await fetch('https://formspree.io/f/mjgpzezo', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) });
-     if (res.ok) { document.getElementById('formSuccess').hidden = false; this.reset(); submitBtn.textContent = 'Submitted \u2713'; if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/MinWCK2y8LcdEIaIuphF' }); } if (typeof window.gtag === 'function') { window.gtag('event', 'generate_lead', { project: 'Candeur Eternia', config: data.config || 'unspecified', page: window.location.pathname }); } }
+     if (res.ok) { document.getElementById('formSuccess').hidden = false; this.reset(); submitBtn.textContent = 'Submitted \u2713'; if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/88SUCLrtm7gdEIaIuphF' }); } if (typeof window.gtag === 'function') { window.gtag('event', 'generate_lead', { project: 'Candeur Eternia', config: data.config || 'unspecified', page: window.location.pathname }); } }
      else { const json = await res.json(); throw new Error(json.error || 'Submission failed'); }
    } catch(err) { submitBtn.disabled = false; submitBtn.textContent = 'Book a Site Visit'; alert('Something went wrong. Please call us at +91 93919 54743 or WhatsApp us.'); }
  });

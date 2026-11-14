@@ -19,7 +19,7 @@ if (form) {
       });
       if (res.ok) {
         // Google Ads conversion: "Submit lead form"
-        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/MinWCK2y8LcdEIaIuphF' }); }
+        if (typeof window.gtag === 'function') { window.gtag('event', 'conversion', { send_to: 'AW-18573329414/88SUCLrtm7gdEIaIuphF' }); }
         document.getElementById('sidebarSuccess').hidden = false;
         form.reset();
         btn.textContent = 'Submitted ✓';
