@@ -92,7 +92,7 @@
       msg += 'Mobile: ' + phone + '\n';
       if (project) msg += 'Interested in: ' + project + '\n';
       if (budget) msg += 'Budget: ' + budget + '\n';
-      msg += 'I found you on nestinhyderabad.com. Please share details.';
+      msg += 'Please share details.';
 
       var waUrl = 'https://wa.me/919391954743?text=' + encodeURIComponent(msg);
       window.open(waUrl, '_blank', 'noopener');
