@@ -1,4 +1,4 @@
-// Sidebar / contact form submission for the Kukatpally OTP landing page
+// Lead form for Sree Nivasam Infra IDL Kukatpally (OTP flats in Kukatpally)
 const form = document.getElementById('sidebarForm');
 if (form) {
   form.addEventListener('submit', async function (e) {
@@ -19,7 +19,7 @@ if (form) {
       const res = await fetch('https://formspree.io/f/mjgpzezo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ name, phone, config, page, project: 'OTP Flats Kukatpally (Metro / GOCL - Hi-Rise 3 BHK)' }),
+        body: JSON.stringify({ name, phone, config, page, project: 'Sree Nivasam Infra IDL Kukatpally (OTP)' }),
       });
       if (res.ok) {
         // Google Ads conversion: "Submit lead form"

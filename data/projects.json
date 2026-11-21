@@ -130,7 +130,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  12000000,
-                                       "priceText":  "u{20B9}1.2 Cr onwards (3 BHK)",
+                                       "priceText":  "\u20B91.2 Cr onwards (3 BHK)",
                                        "pricePerSqft":  5700
                                    },
                          "bhk":  [
@@ -333,10 +333,10 @@
                      {
                          "id":  "otp-flats-kukatpally",
                          "slug":  "otp-flats-kukatpally/",
-                         "projectName":  "Hi-Rise 3 BHK - Kukatpally Metro",
-                         "builder":  "Contact for Details",
+                         "projectName":  "Sree Nivasam Infra IDL Kukatpally",
+                         "builder":  "Sree Nivasam Infra",
                          "status":  "Pre Launch",
-                         "approval":  "RERA Approved",
+                         "approval":  "RERA details on request",
                          "reraNumber":  "",
                          "featured":  true,
                          "location":  {
@@ -349,7 +349,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  0,
-                                       "priceText":  "All-Inclusive u{20B9}5,299/Sq.Ft (OTP)",
+                                       "priceText":  "OTP \u20B95,299*/Sq.Ft",
                                        "pricePerSqft":  5299
                                    },
                          "bhk":  [
@@ -358,64 +358,25 @@
                          "sizes":  [
                                        {
                                            "bhk":  "3 BHK",
-                                           "from":  2000,
-                                           "to":  3200
+                                           "from":  2050,
+                                           "to":  3650
                                        }
                                    ],
                          "projectDetails":  {
-                                                "landArea":  "8 Acres",
-                                                "towers":  4,
-                                                "floors":  "G+32",
+                                                "landArea":  "6 Acres",
+                                                "towers":  3,
+                                                "floors":  "G+25",
                                                 "totalUnits":  0,
-                                                "clubhouse":  "50,000 Sq.Ft",
+                                                "clubhouse":  "50,000+ Sq.Ft (G+7)",
                                                 "possession":  "TBA"
                                             },
                          "propertyType":  "Apartment",
-                         "amenities":  [
-                                           "Grand Luxury Clubhouse",
-                                           "Resort-Style Swimming Pool",
-                                           "Fitness Center",
-                                           "Mini Theatre",
-                                           "Indoor Games Zone",
-                                           "Banquet Hall \u0026 Party Lawn",
-                                           "Co-working Lounge",
-                                           "Kids Play Zone",
-                                           "Jogging \u0026 Cycling Tracks",
-                                           "Yoga \u0026 Meditation Deck",
-                                           "Sports Courts",
-                                           "EV Charging \u0026 24x7 CCTV"
-                                       ],
-                         "connectivity":  [
-                                              {
-                                                  "place":  "Kukatpally Metro Station",
-                                                  "distance":  "~1 km (3 min walk)"
-                                              },
-                                              {
-                                                  "place":  "Hitech City IT Hub",
-                                                  "distance":  "7 km"
-                                              },
-                                              {
-                                                  "place":  "Mumbai Highway",
-                                                  "distance":  "3 km"
-                                              }
-                                          ],
-                         "highlights":  [
-                                            "8-Acre Hi-Rise Gated Community",
-                                            "4 Towers | G+32 Floors",
-                                            "500-Acre Forest View",
-                                            "Metro-Facing Residences",
-                                            "All-Inclusive u{20B9}5,299/Sq.Ft OTP"
-                                        ],
+                         "amenities":  ["G+7 Luxury Clubhouse (50,000+ Sq.Ft)", "Swimming Pool", "Fitness \u0026 Wellness", "Recreational Facilities", "Rooftop \u0026 Skywalk Concept", "Double-Height Arrival Lobby", "Landscaped Open Spaces", "Secure Gated Community"],
+                         "connectivity":  [{"place":  "HITEC City", "distance":  "Nearby"}, {"place":  "IDL Lake, Kukatpally", "distance":  "Project location"}, {"place":  "100-ft road", "distance":  "Direct access"}],
+                         "highlights":  ["6-Acre Ultra-Premium Gated Community", "3 Towers | G+25 Floors", "10-Ft Ceilings in Every Home", "500-Acre Green Trust Land Views", "OTP Offer \u20B95,299*/Sq.Ft"],
                          "seo":  {
-                                     "title":  "OTP Flats in Kukatpally Near Metro - Hi-Rise 3 BHK",
-                                     "keywords":  [
-                                                      "OTP flats Kukatpally",
-                                                      "flats near Kukatpally Metro",
-                                                      "3 BHK Kukatpally",
-                                                      "hi-rise apartments Kukatpally",
-                                                      "forest view apartments Kukatpally",
-                                                      "Kukatpally GOCL flats"
-                                                  ]
+                                     "title":  "OTP Flats in Kukatpally - Sree Nivasam Infra IDL Kukatpally",
+                                     "keywords":  ["OTP flats Kukatpally", "one time payment flats Kukatpally", "Sree Nivasam Infra", "Sree Nivasam Infra IDL Kukatpally", "IDL Lake Kukatpally flats", "OTP flats near HITEC City"]
                                  },
                          "media":  {
                                        "thumbnail":  "/assets/default-img/high-raise.png",
@@ -423,7 +384,7 @@
                                    },
                          "contact":  {
                                          "phone":  "+91 93919 54743",
-                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20the%20OTP%20option%203%20BHK%20flats%20near%20Kukatpally%20Metro.%20Please%20share%20details."
+                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Sree%20Nivasam%20Infra%20IDL%20Kukatpally%20(OTP%20offer).%20Please%20share%20details."
                                      }
                      },
                      {
@@ -445,7 +406,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  0,
-                                       "priceText":  "Pre-Launch u{20B9}5,699/Sft",
+                                       "priceText":  "Pre-Launch \u20B95,699/Sft",
                                        "pricePerSqft":  5699
                                    },
                          "bhk":  [
@@ -517,7 +478,7 @@
                                             "80% Open Space",
                                             "11 Premium High-Rise Towers",
                                             "8-Acre Central Park Courtyard",
-                                            "Pre-Launch u{20B9}5,699/Sft"
+                                            "Pre-Launch \u20B95,699/Sft"
                                         ],
                          "seo":  {
                                      "title":  "SAS Infra Kukatpally IDL - GOCL Pre-Launch",
@@ -763,7 +724,7 @@
                                       },
                          "price":  {
                                        "startingPrice":  0,
-                                       "priceText":  "u{20B9}8,699/Sq.Ft",
+                                       "priceText":  "\u20B98,699/Sq.Ft",
                                        "pricePerSqft":  8699
                                    },
                          "bhk":  [
