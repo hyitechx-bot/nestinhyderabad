@@ -1,4 +1,4 @@
-﻿{
+{
     "lastUpdated":  "2026-07-07",
     "totalAds":  13,
     "classifieds":  [
@@ -71,7 +71,6 @@
                             "postedDate":  "2026-07-03",
                             "featured":  false,
                             "image":  "assets/default-img/high-raise.png",
-                            "projectLink":  "/candeur-skyline/",
                             "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20the%204%20BHK%20Sky%20Villa%20Candeur%20Skyline%20(CLS-003)"
                         },
                         {
@@ -95,7 +94,6 @@
                             "postedDate":  "2026-07-02",
                             "featured":  false,
                             "image":  "assets/default-img/high-raise.png",
-                            "projectLink":  "/candeur-lakescape/",
                             "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20the%203%20BHK%20Lake%20View%20Candeur%20Lakescape%20(CLS-004)"
                         },
                         {
