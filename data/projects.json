@@ -333,8 +333,8 @@
                      {
                          "id":  "otp-flats-kukatpally",
                          "slug":  "otp-flats-kukatpally/",
-                         "projectName":  "Sree Nivasam Infra IDL Kukatpally",
-                         "builder":  "Sree Nivasam Infra",
+                         "projectName":  "New Launch IDL Kukatpally",
+                         "builder":  "Contact for Details",
                          "status":  "Pre Launch",
                          "approval":  "RERA details on request",
                          "reraNumber":  "",
@@ -349,8 +349,8 @@
                                       },
                          "price":  {
                                        "startingPrice":  0,
-                                       "priceText":  "OTP \u20B95,299*/Sq.Ft",
-                                       "pricePerSqft":  5299
+                                       "priceText":  "OTP \u20B95,199*/Sq.Ft",
+                                       "pricePerSqft":  5199
                                    },
                          "bhk":  [
                                      "3 BHK"
@@ -373,10 +373,10 @@
                          "propertyType":  "Apartment",
                          "amenities":  ["G+7 Luxury Clubhouse (50,000+ Sq.Ft)", "Swimming Pool", "Fitness \u0026 Wellness", "Recreational Facilities", "Rooftop \u0026 Skywalk Concept", "Double-Height Arrival Lobby", "Landscaped Open Spaces", "Secure Gated Community"],
                          "connectivity":  [{"place":  "HITEC City", "distance":  "Nearby"}, {"place":  "IDL Lake, Kukatpally", "distance":  "Project location"}, {"place":  "100-ft road", "distance":  "Direct access"}],
-                         "highlights":  ["6-Acre Ultra-Premium Gated Community", "3 Towers | G+25 Floors", "10-Ft Ceilings in Every Home", "500-Acre Green Trust Land Views", "OTP Offer \u20B95,299*/Sq.Ft"],
+                         "highlights":  ["6-Acre Ultra-Premium Gated Community", "3 Towers | G+25 Floors", "10-Ft Ceilings in Every Home", "500-Acre Green Trust Land Views", "OTP Offer \u20B95,199*/Sq.Ft"],
                          "seo":  {
-                                     "title":  "OTP Flats in Kukatpally - Sree Nivasam Infra IDL Kukatpally",
-                                     "keywords":  ["OTP flats Kukatpally", "one time payment flats Kukatpally", "Sree Nivasam Infra", "Sree Nivasam Infra IDL Kukatpally", "IDL Lake Kukatpally flats", "OTP flats near HITEC City"]
+                                     "title":  "OTP Flats in Kukatpally - New Launch IDL Kukatpally",
+                                     "keywords":  ["OTP flats Kukatpally", "one time payment flats Kukatpally", "IDL Lake Kukatpally flats", "OTP flats near HITEC City"]
                                  },
                          "media":  {
                                        "thumbnail":  "/assets/default-img/high-raise.png",
@@ -384,7 +384,7 @@
                                    },
                          "contact":  {
                                          "phone":  "+91 93919 54743",
-                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20Sree%20Nivasam%20Infra%20IDL%20Kukatpally%20(OTP%20offer).%20Please%20share%20details."
+                                         "whatsapp":  "https://wa.me/919391954743?text=Hi%2C%20I%20am%20interested%20in%20New%20Launch%20IDL%20Kukatpally%20(OTP%20offer).%20Please%20share%20details."
                                      }
                      },
                      {
