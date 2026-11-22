@@ -4,7 +4,7 @@
    Clicks are recorded in GA4 as "amazon_click" only. They are NOT sent to the
    Google Ads lead-form conversion, so Amazon traffic stays separate from property leads. */
 (function () {
-  var AMAZON_TAG = ''; // e.g. 'nestinhyderabad-21'
+  var AMAZON_TAG = 'nestinhyd-21'; // Amazon Associates India store ID
   var links = document.querySelectorAll('a[data-amazon]');
   for (var i = 0; i < links.length; i++) {
     (function (a) {
